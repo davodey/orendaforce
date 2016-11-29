@@ -1,0 +1,16 @@
+<div class="panel {{styleModifier}}">
+    <div class="mobile-overlay"></div>
+    <div class="panel-content">
+        {{# panel-one }}
+            <h2 class="white">{{one.panel-title}}</h2>
+            <p class="large white">{{one.panel-content}}</p>
+            <a class="button" href="#get-started" onclick="ga('send', 'event', 'buttons', 'click', 'services-nutrition')">Get Started <span class="fa fa-chevron-right" aria-hidden="true"></span> </a>
+
+        {{/panel-one}}
+        {{# panel-two }}
+            <h2 class="white">{{two.panel-title}}</h2>
+            <p class="large white">{{two.panel-content}}</p>
+            <a class="button" href="#get-started" onclick="ga('send', 'event', 'buttons', 'click', 'services-training')">Get Started <span class="fa fa-chevron-right" aria-hidden="true"></span> </a>
+        {{/panel-two}}
+    </div>
+</div>

@@ -1,0 +1,33 @@
+// Primary Colors
+$black: #000;
+$white: #fff;
+
+$primary-color: #bc3227;
+$primary-action: #A9D979;
+
+$neutral-one: #58585a;
+$neutral-two: #f5eada;
+$neutral-three: #efefef;
+$neutral-four: #8b8b8d;
+$dark: #333;
+
+$navigation: $primary-color;
+$font-color: $neutral-one;
+$trainer-title: $primary-color;
+$background-one: $neutral-two;
+$background-two: $dark;
+
+$family: Arial,Helvetica,sans-serif;
+$web-font: "Rajdhani",sans-serif;
+
+$border: $neutral-three;
+$border-two: $primary-color;
+$input-border: $neutral-four;
+$link-color: $primary-color;
+$link-hover: lighten($link-color, 10%);
+
+$invalid: darken($primary-color,10%);
+$valid: green;
+
+// Measurements
+$unit: 1em;

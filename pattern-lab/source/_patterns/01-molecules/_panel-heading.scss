@@ -1,0 +1,13 @@
+.content {
+	background:none;
+	text-align: center;
+	border:0;
+	
+	@media(max-width:640px) {
+	  padding: 5em 2em;
+	}
+	
+	h2 {
+	  color:$font-color;
+	}
+  }

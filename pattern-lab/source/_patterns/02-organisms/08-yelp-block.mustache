@@ -1,0 +1,25 @@
+ <div id="yelp" class="yelp-block">
+     <div class="panel content">
+        {{> molecules-panel-heading(yelp-block: true) }}
+         <div class="display-reviews">
+             <div class="col">
+                 {{>molecules-yelp-review }}
+             </div>
+             <div class="col">
+                 {{>molecules-yelp-review }}
+             </div>
+             <div class="col">
+                 {{>molecules-yelp-review }}
+             </div>
+         </div>
+         <div class="paginate margin padding">
+             <a class="button primary margin-right" href="#" onclick="ga('send', 'event', 'buttons', 'click', 'yelp-next');">Previous  <span class="fa fa-yelp" aria-hidden="true"></span></a>
+             <a class="button primary" href="#" onclick="ga('send', 'event', 'buttons', 'click', 'yelp-next');">Next  <span class="fa fa-yelp" aria-hidden="true"></span></a>
+         </div>
+
+         <a class="yelp-link" href="#">
+             <p class="large">More Details on </p>
+             <img class="yelp-logo" src="../../images/yelp-2c-outline.png" alt="yelp logo">
+         </a>
+    </div>
+</div>

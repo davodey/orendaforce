@@ -1,0 +1,30 @@
+.nav-list {
+  @include flex(row, center, center);
+  @include font-style($white, auto, $web-font);
+  width:100%;
+  margin:0;
+  background-color:$navigation;
+  padding:0;
+  position:relative;
+  z-index: 3;
+  
+  a {
+    &:hover {
+      color:$white;
+    }
+  }
+  
+  .optional {
+    @media (max-width:1024px) {
+      display:none;
+    }
+  }
+  
+  .nav-item {
+    @include flex(row, center, center);
+    @media (max-width:750px) {
+      flex-direction: column;
+    }
+  }
+}
+

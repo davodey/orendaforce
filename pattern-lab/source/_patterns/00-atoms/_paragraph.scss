@@ -1,0 +1,13 @@
+p {
+  @include font-style($font-color, 1.5, $family);
+  @media(max-width:768px) {
+    font-size:1.8em;
+  }
+}
+
+.large {
+  font-size:1.5em;
+  @media (max-width:768px) {
+    font-size:1.8em;
+  }
+}

@@ -1,0 +1,31 @@
+.info-links {
+  @media(max-width:768px) {
+	padding:3em 0;
+  }
+  li {
+	display:flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin:0;
+	height:2em;
+	color: $font-color;
+	@media(max-width:768px) {
+	  font-size:1.5em;
+	}
+	.fa {
+	  min-width:2.5rem;
+	  
+	  
+	}
+  }
+  .address {
+	@media(max-width:640px) {
+	  display:none;
+	}
+  }
+  .open-maps {
+	@media(min-width:640px) {
+	  display:none;
+	}
+  }
+}

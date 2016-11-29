@@ -1,0 +1,70 @@
+<div class="contact">
+    <form id="contactForm" name="contact-form">
+        <div class="row">
+            <div class="input left">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text">
+            </div>
+            <div class="input right">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text">
+            </div>
+        </div>
+        <div class="input">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="text">
+        </div>
+        <div class="input">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="text">
+        </div>
+        <div class="checkbox-group">
+            <label>Whats the best time to contact you</label>
+            <div class="checkbox">
+                <input id="morning" name="contact-me-in-morning" type="checkbox">
+                <label for="morning">Morning 7am - 11am</label>
+            </div>
+            <div class="checkbox">
+                <input id="afternoon" name="contact-me-in-afternoon" type="checkbox">
+                <label for="afternoon">Afternoon 11am - 3pm</label>
+            </div>
+            <div class="checkbox">
+                <input id="evening" name="contact-me-in-evening" type="checkbox">
+                <label for="evening">Evening 3pm - 7pm</label>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <label>How Should We Contact You?</label>
+            <div class="checkbox">
+                <input id="contactPhone" name="contact-me-by-phone" type="checkbox">
+                <label for="contactPhone">Phone</label>
+            </div>
+            <div class="checkbox">
+                <input id="contactEmail" name="contact-me-by-email" type="checkbox">
+                <label for="contactEmail">Email</label>
+            </div>
+        </div>
+        <div class="checkbox-group">
+            <label>What Services Are You Interested In?</label>
+            <div class="checkbox">
+                <input id="nutrition" name="interested-in-nutrition-training" type="checkbox">
+                <label for="nutrition">Nutritional Training</label>
+            </div>
+            <div class="checkbox">
+                <input id="training" name="interested-in-personal-training" type="checkbox">
+                <label for="training">Personal Training</label>
+            </div>
+        </div>
+        <div class="btn-container">
+            <input type="hidden" id="honey" name="honey">
+            <div id="message" class="success-message">
+                <p>Thank you for the inquiry.  Someone will contact you shortly!</p>
+            </div>
+            <button class="button" id="submitForm" type="submit" onclick="ga('send', 'event', 'buttons', 'click', 'form-submission');">Send Message <span class="fa fa-paper-plane" aria-hidden="true"></span><span class="fa fa-refresh fa-spin fa-lg"></span></button>
+        </div>
+        {{!--<div class="btn-container">--}}
+            {{!--<button type="submit" class="button" onclick="ga('send', 'event', 'buttons', 'click', 'contact-form');">Submit Form <span class="fa fa-paper-plane" aria-hidden="true"></span></button>--}}
+        {{!--</div>--}}
+    </form>
+</div>

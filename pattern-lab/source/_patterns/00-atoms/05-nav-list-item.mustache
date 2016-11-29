@@ -1,0 +1,32 @@
+<li class="nav-list-item">
+    <a href="{{url}}" class="{{styleModifier}}" onclick="ga('send', 'event', 'buttons', 'click', '{{ga-onclick}}');">
+        <div class="item-container">
+            {{#home}}
+                <img src="../../images/logo-nav.png" alt="home icon">
+                <span class="text">Orenda </span>
+                <span class="hide-tablet text"> Force</span>
+            {{/home}}
+            {{#services}}
+                <img src="../../images/scale-nav.png" alt="services icon">
+                <span class="text">Services</span>
+            {{/services}}
+            {{#trainers}}
+                <img src="../../images/trainer-nav.png" alt="trainers icon">
+                <span class="text">Trainers</span>
+            {{/trainers}}
+            {{#membership}}
+                <img src="../../images/cost.png" alt="membership icon">
+                <span class="text">Membership</span>
+            {{/membership}}
+            {{#session}}
+                <img src="../../images/email.png" alt="session icon">
+                <span class="text hide-tablet">Free </span>
+                <span class="text margin-left-thin"> Session</span>
+            {{/session}}
+            {{#contact}}
+                <img src="../../images/phone.png" alt="contact icon">
+                <span class="text">330-903-0531</span>
+            {{/contact}}
+        </div>
+    </a>
+</li>

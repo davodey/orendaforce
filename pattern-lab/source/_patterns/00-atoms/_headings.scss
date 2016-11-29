@@ -1,0 +1,27 @@
+h1 {
+  color:$font-color;
+  font-family: $family;
+  line-height:1.5em;
+  font-weight: normal;
+  
+  @media (max-width:640px) {
+    font-weight:bold;
+  }
+}
+
+h2 {
+  font-family: $web-font;
+  font-size:2.7em;
+  text-transform: uppercase;
+  
+  @media(max-width:640px) {
+    font-size:3em;
+  }
+}
+
+h3 {
+  font-family: $web-font;
+  font-size:2em;
+  text-transform: uppercase;
+  margin-bottom:0;
+}

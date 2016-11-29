@@ -1,0 +1,57 @@
+.panel {
+  background-image: url('http://placehold.it/100p');
+  padding: $unit*8 $unit*5;
+  border-bottom:1px solid $white;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position-x: right;
+  background-position-y: bottom;
+  position:relative;
+  @media(max-width:640px) {
+    padding:$unit*5 $unit*2;
+  }
+  
+  h2 {
+    margin:0;
+  }
+  p {
+    margin-top:0;
+  }
+  
+  &.left {
+    text-align: left;
+  }
+  
+  &.right {
+    text-align: right;
+  }
+}
+
+.panel-content {
+  position:relative;
+  z-index: 2;
+  @media(max-width:640px) {
+    text-align: center;
+  }
+}
+.nutrition {
+  background-image: url("../images/nutrition.jpg");
+}
+
+.fitness{
+  background-image: url("../images/training.jpg");
+  @media(max-width:640px) {
+    background-position:center;
+  }
+}
+
+.mobile-overlay {
+  position:absolute;
+  left:0;
+  top:0;
+  opacity:.2;
+  z-index: 1;
+  background:$black;
+  height:100%;
+  width:100%;
+}

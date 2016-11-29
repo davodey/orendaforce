@@ -1,0 +1,31 @@
+.get-started-block {
+  border-top: 5px solid #bc3227;
+}
+.form-container {
+  display:flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top:2em;
+  
+
+  
+  @media(max-width:768px) {
+    flex-direction: column;
+  }
+  
+  > div {
+	flex:1;
+  }
+  
+}
+
+.map {
+  padding-top:2em;
+
+  @media(max-width:768px) {
+    padding:0;
+  }
+  img {
+    max-width:100%;
+  }
+}

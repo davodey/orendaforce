@@ -1,0 +1,51 @@
+/* Imports Elements SDK SCSS, Font Awesome & Patternlab styles */
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:600');
+@import 'font-awesome/font-awesome';
+@import 'icomoon';
+@import 'pattern-lab';
+@import 'reset';
+
+// Loads generic helper classes
+@import 'variables';
+@import 'mixins';
+@import 'helpers';
+@import 'flex';
+
+// Start project files located in the 'pattern-lab/source/_patterns' folders
+@import '../source/_patterns/00-atoms/headings';
+@import '../source/_patterns/00-atoms/logo';
+@import '../source/_patterns/00-atoms/paragraph';
+@import '../source/_patterns/00-atoms/buttons';
+@import '../source/_patterns/00-atoms/nav-list-item';
+@import '../source/_patterns/00-atoms/input';
+@import '../source/_patterns/00-atoms/select';
+@import '../source/_patterns/00-atoms/checkbox';
+@import '../source/_patterns/00-atoms/links';
+@import '../source/_patterns/00-atoms/map';
+@import '../source/_patterns/00-atoms/yelp-stars';
+@import '../source/_patterns/00-atoms/profile-pic';
+
+
+//
+@import '../source/_patterns/01-molecules/navigation';
+@import '../source/_patterns/01-molecules/image-panel';
+@import '../source/_patterns/01-molecules/panel-heading';
+@import '../source/_patterns/01-molecules/trainer';
+@import '../source/_patterns/01-molecules/price-table';
+@import '../source/_patterns/01-molecules/input-group';
+@import '../source/_patterns/01-molecules/info-links';
+@import '../source/_patterns/01-molecules/yelp-review';
+
+
+//
+@import '../source/_patterns/02-organisms/header';
+@import '../source/_patterns/02-organisms/image-blocks';
+@import '../source/_patterns/02-organisms/trainer-block';
+@import '../source/_patterns/02-organisms/membership-block';
+@import '../source/_patterns/02-organisms/contact-form';
+@import '../source/_patterns/02-organisms/contact-block';
+@import '../source/_patterns/02-organisms/get-started-block';
+@import '../source/_patterns/02-organisms/footer';
+@import '../source/_patterns/02-organisms/yelp-block';
+
+

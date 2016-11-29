@@ -1,0 +1,34 @@
+{
+  "img-url": "http://placehold.it/350x150",
+  "alt-text": "alt",
+  "btn-text": "default",
+  "icon": "fa-map-marker",
+  "url": "#",
+  "nav-icon-class": "icon-logo-icon",
+  "nav-text": "Orenda Force",
+  "one": {
+    "panel-title": "Panel Title",
+    "panel-content": "Become the best you through a nutritional lifestyle designed for your individual body and goals. With your individual nutrition plan designed upon many factors around your individuality, you will be coached and held accountable to finally accomplish your goals for now and the rest of your life."
+  },
+  "two": {
+    "panel-title": "Panel Title",
+    "panel-content": "Become the best you through a nutritional lifestyle designed for your individual body and goals. With your individual nutrition plan designed upon many factors around your individuality, you will be coached and held accountable to finally accomplish your goals for now and the rest of your life."
+  },
+  "trainer": {
+    "one": {
+      "image": "jordan.jpg",
+      "name": "Jordan Hoppel",
+      "desc": "Jordan has a degree in Exercise Science. He is pursuing his professional career in track and field as a sprinter."
+    },
+    "two": {
+      "image": "kolton.jpg",
+      "name": "Kolton Morrison",
+      "desc": "Founder of Orenda Force, Kolton is a certified personal trainer, fitness instructor and nutritional therapist."
+    }
+  },
+  "panels": {
+    "panel-title": "Our Team",
+    "panel-content": "We believe every person deserves to perform, look and feel the way they desire. Orenda offers the power for each individual to take charge of their lives and flourish. We assist and guide individuals in achieving their overall health and performance goals."
+  }
+}
+

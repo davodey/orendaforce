@@ -1,0 +1,84 @@
+.price-table {
+  background-color:$white;
+  border-radius:5px;
+  border:1px solid $white;
+}
+.competitor {
+  @include flex(column, center, center);
+  
+  padding:0;
+  margin:0;
+  li {
+	width:100%;
+	list-style-type: none;
+	padding:.8em;
+	text-align: center;
+	color: $font-color;
+	margin:0;
+	&:nth-child(even) {
+	  background-color:$neutral-three;
+	}
+	
+	.fa-times {
+	  color:$primary-color;
+	}
+	.fa-check {
+	  color: $valid;
+	}
+	span {
+	  padding: 0 .3em;
+	}
+  }
+  .special {
+	background-color:$dark;
+	color:$white;
+	font-family: $web-font;
+	text-transform: uppercase;
+	font-size:1em;
+	
+	&.price {
+	  background-color: $neutral-one;
+	}
+	
+	&.name {
+	  border-radius: 10px 10px 0 0;
+	}
+
+  }
+  
+  &.orenda {
+	font-size:1em;
+	@media(max-width:768px) {
+	  font-size:1.8em;
+	}
+	.name {
+	  @include flex(row, center, center);
+	  background-color:darken($primary-color,10%);
+	  	font-size:1.5em;
+	  @media(max-width:768px) {
+		font-size:1.5em;
+	  }
+	  
+	  img {
+		width:30px;
+		margin-right:.3em;
+		@media(max-width:768px) {
+		  margin:0;
+		  width:50x;
+		}
+	  }
+
+	}
+	.price {
+	  @include flex(column, center, center);
+	  background-color: $primary-color;
+	  font-size:1.5em;
+	  @media(max-width:768px) {
+		font-size:1.5em;
+	  }
+	  .starts {
+		font-size:.5em;
+	  }
+	}
+  }
+}

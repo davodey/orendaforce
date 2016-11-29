@@ -1,0 +1,8 @@
+<ul id="navigation" class="nav nav-tabs nav-list" role="tablist">
+    {{> atoms-nav-list-item:active(home: true, ga-onclick: "navigation-home", url: "#header")}}
+    {{> atoms-nav-list-item(services: true, ga-onclick: "navigation-services", url: "#services")}}
+    {{> atoms-nav-list-item(trainers: true, ga-onclick: "navigation-trainers", url: "#trainers")}}
+    {{> atoms-nav-list-item(membership: true, ga-onclick: "navigation-membership", url: "#membership")}}
+    {{> atoms-nav-list-item(session: true, ga-onclick: "navigation-session", url: "#get-started")}}
+    {{> atoms-nav-list-item(contact: true, ga-onclick: "navigation-call", url: "tel:330-903-0531")}}
+</ul>

@@ -1,0 +1,31 @@
+.input {
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom:1em;
+  width:100%;
+  flex:1;
+}
+
+label {
+  font-size: .875em;
+  margin-bottom:.5em;
+  color:$font-color;
+  width:100%;
+  text-align: left;
+  
+  @media(max-width:768px) {
+    font-size:1em;
+  }
+  
+  
+  &.error {
+    background-color: $primary-color;
+    color:$white;
+    font-size: .875em;
+    padding:.3em;
+    margin-bottom:0;
+    margin-top:-2px;
+    
+  }
+}

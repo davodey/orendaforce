@@ -1,0 +1,13 @@
+.button {
+  @include button($primary-action);
+  cursor:pointer;
+  
+  &.primary {
+    @include button($primary-color);
+    color:$white;
+    &:hover {
+      color:$white;
+    }
+  }
+}
+

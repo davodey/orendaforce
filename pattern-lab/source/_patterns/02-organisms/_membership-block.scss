@@ -1,0 +1,55 @@
+.membership-block {
+  background-color:$background-two;
+  border-top: 5px solid #bc3227;
+  .panel {
+	&.content {
+	  h2 {
+		color:$neutral-four;
+	  }
+	  p {
+		color:$neutral-four;
+	  }
+	}
+  }
+  .price-comparisons {
+	@include flex(row, center, center);
+	flex-wrap: wrap;
+
+  }
+  .col {
+	flex:1;
+	@media(768px) {
+	  order:1;
+	  flex: auto;
+	}
+	&.orenda {
+	  flex:2;
+	  @media(max-width:768px){
+		order:3;
+		flex: auto;
+		width:100%;
+	  }
+ 	}
+  }
+}
+
+.lifetime {
+  font-size:.875em;
+  
+  @media (max-width:768px) {
+	margin-bottom:2em;
+  }
+  @media(max-width:640px) {
+	display:none;
+  }
+}
+
+.mountainside {
+  font-size:.875em;
+  @media (max-width:768px) {
+	margin-bottom:2em;
+  }
+  @media(max-width:640px) {
+	display:none;
+  }
+}

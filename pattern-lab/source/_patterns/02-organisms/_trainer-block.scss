@@ -1,0 +1,13 @@
+.trainer-block {
+  background-color: $background-one;
+  border-top:5px solid $primary-color;
+}
+.our-trainers {
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  
+  @media(max-width:768px) {
+    flex-direction:column;
+  }
+}

@@ -1,0 +1,10 @@
+ <div id="trainers" class="trainer-block">
+     <div class="panel content">
+        {{> molecules-panel-heading(trainer-block: true) }}
+        <div class="our-trainers">
+            {{> molecules-trainer(trainer-one:true)}}
+            {{> molecules-trainer(trainer-two:true)}}
+        </div>
+         <a class="button" href="#get-started" onclick="ga('send', 'event', 'buttons', 'click', 'trainer-getstarted')">Get Started <span class="fa fa-chevron-right" aria-hidden="true"></span> </a>
+    </div>
+</div>

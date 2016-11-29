@@ -1,0 +1,12 @@
+<header id="header">
+    {{> atoms-images:logo(img-url: "../../images/logo.svg", alt-text: "Orenda Logo") }}
+    <h1 class="border-bottom padding-bottom padding-top">Orenda Force is a wellness club that helps one achieve peak health, both of body and mind. We provide a service that assists and guides people in achieving their overall health goals.</h1>
+    <p class="padding-bottom">We Are located on the North East Corner of Tatum and Dynamite. Only 5 minutes North of Desert Ridge.</p>
+    <div>
+        <a class="button margin-right" href="#info" onclick="ga('send', 'event', 'buttons', 'click', 'header-viewmap');"><span class="fa fa-map-marker" aria-hidden="true"></span> See Map of Location</a>
+        <a class="button primary" href="#info" onclick="ga('send', 'event', 'buttons', 'click', 'header-yelp');"><span class="fa fa-yelp" aria-hidden="true"></span> Read our Reviews</a>
+    </div>
+</header>
+<nav>
+    {{> molecules-navigation }}
+</nav>
