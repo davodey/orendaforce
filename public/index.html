@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/style.css" media="all" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/pattern-scaffolding.css" media="all" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/js/lib/iCheck.1.0.2/all.css" media="all" />
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tag above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start`.
+      To create a production bundle, use `npm run build`.
+    -->
+    <!--JavaScript Libraries-->
+    <header id="header">
+      <img class="logo" src="..&#x2F;..&#x2F;images&#x2F;logo.svg" alt="Orenda Logo">
+      <h1 class="border-bottom padding-bottom padding-top">Orenda Force is a wellness club that helps one achieve peak health, both of body and mind. We provide a service that assists and guides people in achieving their overall health goals.</h1>
+      <p class="padding-bottom">We Are located on the North East Corner of Tatum and Dynamite. Only 5 minutes North of Desert Ridge.</p>
+      <div>
+        <a class="button margin-right" href="#info" onclick="ga('send', 'event', 'buttons', 'click', 'header-viewmap');"><span class="fa fa-map-marker" aria-hidden="true"></span> See Map of Location</a>
+        <a class="button primary" href="#info" onclick="ga('send', 'event', 'buttons', 'click', 'header-yelp');"><span class="fa fa-yelp" aria-hidden="true"></span> Read our Reviews</a>
+      </div>
+    </header>
+    <nav>
+      <ul id="navigation" class="nav nav-tabs nav-list" role="tablist">
+        <li class="nav-list-item">
+          <a href="#header" class="active" onclick="ga('send', 'event', 'buttons', 'click', 'navigation-home');">
+            <div class="item-container">
+              <img src="../../images/logo-nav.png" alt="home icon">
+              <span class="text">Orenda </span>
+              <span class="hide-tablet text"> Force</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#services" class="" onclick="ga('send', 'event', 'buttons', 'click', 'navigation-services');">
+            <div class="item-container">
+              <img src="../../images/scale-nav.png" alt="services icon">
+              <span class="text">Services</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#trainers" class="" onclick="ga('send', 'event', 'buttons', 'click', 'navigation-trainers');">
+            <div class="item-container">
+              <img src="../../images/trainer-nav.png" alt="trainers icon">
+              <span class="text">Trainers</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#membership" class="" onclick="ga('send', 'event', 'buttons', 'click', 'navigation-membership');">
+            <div class="item-container">
+              <img src="../../images/cost.png" alt="membership icon">
+              <span class="text">Membership</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#get-started" class="" onclick="ga('send', 'event', 'buttons', 'click', 'navigation-session');">
+            <div class="item-container">
+              <img src="../../images/email.png" alt="session icon">
+              <span class="text hide-tablet">Free </span>
+              <span class="text margin-left-thin"> Session</span>
+            </div>
+          </a>
+        </li>
+        <li class="nav-list-item">
+          <a href="tel:330-903-0531" class="330-903-0531" onclick="ga('send', 'event', 'buttons', 'click', 'navigation-call');">
+            <div class="item-container">
+              <img src="../../images/phone.png" alt="contact icon">
+              <span class="text">330-903-0531</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="services" class="image-blocks">
+      <div class="panel nutrition left">
+        <div class="mobile-overlay"></div>
+        <div class="panel-content">
+          <h2 class="white">Nutritional Coaching</h2>
+          <p class="large white">Become the best you through a nutritional lifestyle designed for your individual body and goals. With your individual nutrition plan designed upon many factors around your individuality, you will be coached and held accountable to finally accomplish your goals for now and the rest of your life.</p>
+          <a class="button" href="#get-started" onclick="ga('send', 'event', 'buttons', 'click', 'services-nutrition')">Get Started <span class="fa fa-chevron-right" aria-hidden="true"></span> </a>
+        </div>
+      </div>
+      <div class="panel fitness right">
+        <div class="mobile-overlay"></div>
+        <div class="panel-content">
+          <h2 class="white">Fitness Training</h2>
+          <p class="large white">Enjoy the relationship with a coach that really cares about you, your wellness, and individual goals. Your training is programmed by your coach based on specifics about you as an individual and what you desire to accomplish. Each training session of yours is already thoughtfully programmed ready for you to tackle alongside a coach pushing you to your very best.</p>
+          <a class="button" href="#get-started" onclick="ga('send', 'event', 'buttons', 'click', 'services-training')">Get Started <span class="fa fa-chevron-right" aria-hidden="true"></span> </a>
+        </div>
+      </div>
+    </div>
+    <div id="trainers" class="trainer-block">
+      <div class="panel content">
+        <h2>Our Team</h2>
+        <p class="large">We believe every person deserves to perform, look and feel the way they desire. Orenda offers the power for each individual to take charge of their lives and flourish. We assist and guide individuals in achieving their overall health and performance goals.</p>
+        <div class="our-trainers">
+          <div class="trainer">
+            <img src="../../images/jordan.jpg" alt="Jordan Hoppel" class="trainer-img">
+            <h3>Jordan Hoppel</h3>
+            <p>Jordan has a degree in Exercise Science. He is pursuing his professional career in track and field as a sprinter.</p>
+          </div>
+          <div class="trainer">
+            <img src="../../images/kolton.jpg" alt="Kolton Morrison" class="trainer-img">
+            <h3>Kolton Morrison</h3>
+            <p>Founder of Orenda Force, Kolton is a certified personal trainer, fitness instructor and nutritional therapist.</p>
+          </div>
+        </div>
+        <a class="button" href="#get-started" onclick="ga('send', 'event', 'buttons', 'click', 'trainer-getstarted')">Get Started <span class="fa fa-chevron-right" aria-hidden="true"></span> </a>
+      </div>
+    </div>
+    <div id="membership" class="membership-block">
+      <div class="panel content">
+        <h2>Your Membership</h2>
+        <p class="large">We go above and beyond and were not your typical gym. We serve to give you the best personal training, with the best equipment, so you can achieve your goals at a price you can afford. No hidden fees, no contracts, no additional membership dues.</p>
+        <div class="price-comparisons margin-bottom">
+          <div class="col margin-right mountainside">
+            <div class="price-table">
+              <ul class="competitor">
+                <li class="name special">Mountainside Fitness</li>
+                <li class="price special">$76 per session</li>
+                <li><span class="fa fa-times" aria-hidden="true"></span>No contracts</li>
+                <li><span class="fa fa-times" aria-hidden="true"></span>No cancelation fee</li>
+                <li><span class="fa fa-times" aria-hidden="true"></span>$43 monthly dues</li>
+                <li><span class="fa fa-times" aria-hidden="true"></span>Flexible scheduling</li>
+                <li><span class="fa fa-times" aria-hidden="true"></span>24/7 coaching support</li>
+                <li><span class="fa fa-check" aria-hidden="true"></span>Nutrition coaching included</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col orenda">
+            <div class="price-table">
+              <ul class="competitor orenda">
+                <li class="name special"><img src="../../images/logo-nav.png" alt="logo"><span class="text">Orenda Force</span></li>
+                <li class="price special"><span class="starts">Starts as low as</span><span>$19 per session</span></li>
+                <li><span class="fa fa-check" aria-hidden="true"></span>No contracts</li>
+                <li><span class="fa fa-check" aria-hidden="true"></span>No cancelation fee</li>
+                <li><span class="fa fa-check" aria-hidden="true"></span>No membership dues</li>
+                <li><span class="fa fa-check" aria-hidden="true"></span>Flexible scheduling</li>
+                <li><span class="fa fa-check" aria-hidden="true"></span>24/7 coaching support</li>
+                <li><span class="fa fa-check" aria-hidden="true"></span>Nutrition coaching included</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col margin-left lifetime">
+            <div class="price-table">
+              <ul class="competitor">
+                <li class="name special">Lifetime Fitness</li>
+                <li class="price special">$79 - 99 per session</li>
+                <li><span class="fa fa-check" aria-hidden="true"></span>No contracts</li>
+                <li><span class="fa fa-check" aria-hidden="true"></span>No cancelation fee</li>
+                <li><span class="fa fa-times" aria-hidden="true"></span>$99 monthly dues</li>
+                <li><span class="fa fa-times" aria-hidden="true"></span>Flexible scheduling</li>
+                <li><span class="fa fa-times" aria-hidden="true"></span>24/7 coaching support</li>
+                <li><span class="fa fa-check" aria-hidden="true"></span>$99 Nutrition coaching</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a class="button" href="#get-started" onclick="ga('send', 'event', 'buttons', 'click', 'price-getstarted')">Get Started <span class="fa fa-chevron-right" aria-hidden="true"></span> </a>
+      </div>
+    </div>
+    <div id="yelp" class="yelp-block">
+    </div>
+    <div id="get-started" class="get-started-block">
+      <div class="panel content">
+        <h2>Get Started Today</h2>
+        <p class="large">No longterm commitments, or contracts, fill out our form, send us an email, give us a call, or drop in and say hi!</p>
+        <div class="form-container">
+          <div class="left">
+            <div class="contact-container">
+              <div class="contact">
+                <form id="contactForm" name="contact-form">
+                  <div class="row">
+                    <div class="input left">
+                      <label for="firstName">First Name</label>
+                      <input id="firstName" name="firstName" type="text">
+                    </div>
+                    <div class="input right">
+                      <label for="lastName">Last Name</label>
+                      <input id="lastName" name="lastName" type="text">
+                    </div>
+                  </div>
+                  <div class="input">
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="text">
+                  </div>
+                  <div class="input">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" name="phone" type="text">
+                  </div>
+                  <div class="checkbox-group">
+                    <label>Whats the best time to contact you</label>
+                    <div class="checkbox">
+                      <input id="morning" name="contact-me-in-morning" type="checkbox">
+                      <label for="morning">Morning 7am - 11am</label>
+                    </div>
+                    <div class="checkbox">
+                      <input id="afternoon" name="contact-me-in-afternoon" type="checkbox">
+                      <label for="afternoon">Afternoon 11am - 3pm</label>
+                    </div>
+                    <div class="checkbox">
+                      <input id="evening" name="contact-me-in-evening" type="checkbox">
+                      <label for="evening">Evening 3pm - 7pm</label>
+                    </div>
+                  </div>
+                  <div class="checkbox-group">
+                    <label>How Should We Contact You?</label>
+                    <div class="checkbox">
+                      <input id="contactPhone" name="contact-me-by-phone" type="checkbox">
+                      <label for="contactPhone">Phone</label>
+                    </div>
+                    <div class="checkbox">
+                      <input id="contactEmail" name="contact-me-by-email" type="checkbox">
+                      <label for="contactEmail">Email</label>
+                    </div>
+                  </div>
+                  <div class="checkbox-group">
+                    <label>What Services Are You Interested In?</label>
+                    <div class="checkbox">
+                      <input id="nutrition" name="interested-in-nutrition-training" type="checkbox">
+                      <label for="nutrition">Nutritional Training</label>
+                    </div>
+                    <div class="checkbox">
+                      <input id="training" name="interested-in-personal-training" type="checkbox">
+                      <label for="training">Personal Training</label>
+                    </div>
+                  </div>
+                  <div class="btn-container">
+                    <input type="hidden" id="honey" name="honey">
+                    <div id="message" class="success-message">
+                      <p>Thank you for the inquiry.  Someone will contact you shortly!</p>
+                    </div>
+                    <button class="button" id="submitForm" type="submit" onclick="ga('send', 'event', 'buttons', 'click', 'form-submission');">Send Message <span class="fa fa-paper-plane" aria-hidden="true"></span><span class="fa fa-refresh fa-spin fa-lg"></span></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="right margin-left-double no-margin-tablet">
+            <div id="info" class="info">
+              <ul class="info-links">
+                <li><span class="fa fa-mobile fa-2x" aria-hidden="true"></span><span>Call Us: <a href="tel:330-903-0531" onclick="ga('send', 'event', 'buttons', 'click', 'phone-call');">330-903-0531</a></span></li>
+                <li><span class="fa fa-envelope fa" aria-hidden="true"></span><span>Email Us: <a href="mailto:koltonm45@gmail.com" onclick="ga('send', 'event', 'buttons', 'click', 'email-link');">koltonm45@gmail.com</a></span></li>
+                <li><span class="fa fa-map-marker fa-lg" aria-hidden="true"></span><span class="open-maps"><a target="_blank" href="https://www.google.com/maps/place/Orenda+Force/@33.7424273,-111.9794442,16z/data=!4m13!1m7!3m6!1s0x872b7a409582362f:0x9bee6d1bf42dd92d!2sOrenda+Force!3b1!8m2!3d33.7425671!4d-111.9773909!3m4!1s0x872b7a409582362f:0x9bee6d1bf42dd92d!8m2!3d33.7425671!4d-111.9773909" onclick="ga('send', 'event', 'buttons', 'click', 'address-link');">Open Maps for Directions</a></span><span class="address"><a target="_blank" href="https://www.google.com/maps/place/Orenda+Force/@33.7424273,-111.9794442,16z/data=!4m13!1m7!3m6!1s0x872b7a409582362f:0x9bee6d1bf42dd92d!2sOrenda+Force!3b1!8m2!3d33.7425671!4d-111.9773909!3m4!1s0x872b7a409582362f:0x9bee6d1bf42dd92d!8m2!3d33.7425671!4d-111.9773909" onclick="ga('send', 'event', 'buttons', 'click', 'address-link');">28325 N Tatum Blvd, Cave Creek, AZ 85331</a></span></li>
+              </ul>
+            </div>
+            <div id="map" class="map">
+              <a href="https://www.google.com/maps/place/Orenda+Force/@33.7424273,-111.9794442,16.94z/data=!4m7!1m4!3m3!1s0x872b7a4095ac2819:0x2a579b1eedf52886!2s28325+Tatum+Blvd+%233,+Cave+Creek,+AZ+85331!3b1!3m1!1s0x872b7a409582362f:0x9bee6d1bf42dd92d" target="_blank" onclick="ga('send', 'event', 'buttons', 'click', 'address-image');">
+                <img src="../../images/map.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="panel content">
+        <span>© Copyright 2016 Orenda Force </span>
+        <span><a target="_blank" href="http://www.davidodey.com">UI / UX & Web Design by David ODey</a></span>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
+    <script src="%PUBLIC_URL%/js/validation.js"></script>
+    <script >
+        $(document).ready(function(){
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_flat',
+                radioClass: 'iradio_flat'
+            });
+
+            function createAccountValidation() {
+                var $honey = $('#honey').val();
+                $('#message').hide();
+                $('.fa-refresh').hide();
+                $("form[name='contact-form']").validate({
+                    // Specify validation rules
+                    rules: {
+                        firstName: {
+                            required: true
+                        },
+                        lastName: {
+                            required: true
+                        },
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        phone: {
+                            required: true,
+                            phoneUS: true
+                        }
+                    },
+                    messages: {
+                        firstname: {
+                            required: "First name is required"
+                        },
+                        lastname: {
+                            required: "Last name is required"
+                        },
+                        email: {
+                            required: "Email is required",
+                            email: "Please enter a valid email address"
+                        },
+                        phone: {
+                            required: "Phone number is required",
+                            phoneUS: "Please enter a valid phone number"
+                        }
+                    },
+                    highlight: function (element, errorClass, validClass) {
+                        $(element).addClass(errorClass).removeClass(validClass);
+                        $(element.form).find("label[for=" + element.id + "]")
+                            .addClass('alt-color');
+                    },
+                    unhighlight: function (element, errorClass, validClass) {
+                        $(element).removeClass(errorClass).addClass(validClass);
+                        $(element.form).find("label[for=" + element.id + "]")
+                            .removeClass('alt-color');
+                    },
+                    onfocusout: function (element) {
+                        $(element).valid();
+                    },
+                    errorPlacement: function (error, element) {
+                        error.appendTo(element.parent()).hide().slideDown('normal', function () {
+
+                        });
+                    },
+                    // Make sure the form is submitted to the destination defined
+                    // in the "action" attribute of the form when valid
+                    submitHandler: function (form) {
+                        if ($honey.length !== 0 && ~value.indexOf('@') && ~value.indexOf('sir')) {
+                        } else {
+                            var formData = $('#contactForm').serialize();
+                            $('.fa-paper-plane').hide();
+                            $('.fa-refresh').show();
+                            $.ajax({
+                                type: 'POST',
+                                url: 'https://formspree.io/dodey@icloud.com',
+                                data: formData,
+                                dataType: 'json',
+                                success: function (response) {
+                                    console.log(response);
+                                    $('.fa-paper-plane').hide();
+                                    $('.fa-refresh').show();
+                                    if (response.success === 'email sent') {
+                                        $('#message').fadeIn('fast');
+                                        $('#submitForm').hide();
+                                    }
+                                }
+                            });
+                        }
+                    }
+                });
+
+            }
+
+            createAccountValidation();
+
+        });
+
+    </script>
+
+  </body>
+</html>

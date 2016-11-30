@@ -1,0 +1,5934 @@
+@charset "UTF-8";
+/* Imports Elements SDK SCSS, Font Awesome & Patternlab styles */
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:600");
+/*!
+ *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing:border-box
+}
+
+/* line 4, pattern-lab/scss/font-awesome/_core.scss */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 5, pattern-lab/scss/font-awesome/_larger.scss */
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+/* line 10, pattern-lab/scss/font-awesome/_larger.scss */
+.fa-2x {
+  font-size: 2em;
+}
+
+/* line 11, pattern-lab/scss/font-awesome/_larger.scss */
+.fa-3x {
+  font-size: 3em;
+}
+
+/* line 12, pattern-lab/scss/font-awesome/_larger.scss */
+.fa-4x {
+  font-size: 4em;
+}
+
+/* line 13, pattern-lab/scss/font-awesome/_larger.scss */
+.fa-5x {
+  font-size: 5em;
+}
+
+/* line 3, pattern-lab/scss/font-awesome/_fixed-width.scss */
+.fa-fw {
+  width: 1.28571em;
+  text-align: center;
+}
+
+/* line 4, pattern-lab/scss/font-awesome/_list.scss */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none;
+}
+/* line 8, pattern-lab/scss/font-awesome/_list.scss */
+.fa-ul > li {
+  position: relative;
+}
+
+/* line 10, pattern-lab/scss/font-awesome/_list.scss */
+.fa-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center;
+}
+/* line 16, pattern-lab/scss/font-awesome/_list.scss */
+.fa-li.fa-lg {
+  left: -1.85714em;
+}
+
+/* line 4, pattern-lab/scss/font-awesome/_bordered-pulled.scss */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eee;
+  border-radius: .1em;
+}
+
+/* line 10, pattern-lab/scss/font-awesome/_bordered-pulled.scss */
+.fa-pull-left {
+  float: left;
+}
+
+/* line 11, pattern-lab/scss/font-awesome/_bordered-pulled.scss */
+.fa-pull-right {
+  float: right;
+}
+
+/* line 14, pattern-lab/scss/font-awesome/_bordered-pulled.scss */
+.fa.fa-pull-left {
+  margin-right: .3em;
+}
+/* line 15, pattern-lab/scss/font-awesome/_bordered-pulled.scss */
+.fa.fa-pull-right {
+  margin-left: .3em;
+}
+
+/* Deprecated as of 4.4.0 */
+/* line 19, pattern-lab/scss/font-awesome/_bordered-pulled.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 20, pattern-lab/scss/font-awesome/_bordered-pulled.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 23, pattern-lab/scss/font-awesome/_bordered-pulled.scss */
+.fa.pull-left {
+  margin-right: .3em;
+}
+/* line 24, pattern-lab/scss/font-awesome/_bordered-pulled.scss */
+.fa.pull-right {
+  margin-left: .3em;
+}
+
+/* line 4, pattern-lab/scss/font-awesome/_animated.scss */
+.fa-spin {
+  animation: fa-spin 2s infinite linear;
+}
+
+/* line 9, pattern-lab/scss/font-awesome/_animated.scss */
+.fa-pulse {
+  animation: fa-spin 1s infinite steps(8);
+}
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+/* line 4, pattern-lab/scss/font-awesome/_rotated-flipped.scss */
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  transform: rotate(90deg);
+}
+
+/* line 5, pattern-lab/scss/font-awesome/_rotated-flipped.scss */
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  transform: rotate(180deg);
+}
+
+/* line 6, pattern-lab/scss/font-awesome/_rotated-flipped.scss */
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  transform: rotate(270deg);
+}
+
+/* line 8, pattern-lab/scss/font-awesome/_rotated-flipped.scss */
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  transform: scale(-1, 1);
+}
+
+/* line 9, pattern-lab/scss/font-awesome/_rotated-flipped.scss */
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  transform: scale(1, -1);
+}
+
+/* line 14, pattern-lab/scss/font-awesome/_rotated-flipped.scss */
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  -webkit-filter: none;
+          filter: none;
+}
+
+/* line 4, pattern-lab/scss/font-awesome/_stacked.scss */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+/* line 12, pattern-lab/scss/font-awesome/_stacked.scss */
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 18, pattern-lab/scss/font-awesome/_stacked.scss */
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/* line 19, pattern-lab/scss/font-awesome/_stacked.scss */
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+/* line 20, pattern-lab/scss/font-awesome/_stacked.scss */
+.fa-inverse {
+  color: #fff;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 4, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-glass:before {
+  content: "";
+}
+
+/* line 5, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-music:before {
+  content: "";
+}
+
+/* line 6, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-search:before {
+  content: "";
+}
+
+/* line 7, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-envelope-o:before {
+  content: "";
+}
+
+/* line 8, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-heart:before {
+  content: "";
+}
+
+/* line 9, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-star:before {
+  content: "";
+}
+
+/* line 10, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-star-o:before {
+  content: "";
+}
+
+/* line 11, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-user:before {
+  content: "";
+}
+
+/* line 12, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-film:before {
+  content: "";
+}
+
+/* line 13, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-th-large:before {
+  content: "";
+}
+
+/* line 14, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-th:before {
+  content: "";
+}
+
+/* line 15, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-th-list:before {
+  content: "";
+}
+
+/* line 16, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-check:before {
+  content: "";
+}
+
+/* line 17, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: "";
+}
+
+/* line 20, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-search-plus:before {
+  content: "";
+}
+
+/* line 21, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-search-minus:before {
+  content: "";
+}
+
+/* line 22, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-power-off:before {
+  content: "";
+}
+
+/* line 23, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-signal:before {
+  content: "";
+}
+
+/* line 24, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-gear:before,
+.fa-cog:before {
+  content: "";
+}
+
+/* line 26, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-trash-o:before {
+  content: "";
+}
+
+/* line 27, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-home:before {
+  content: "";
+}
+
+/* line 28, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-file-o:before {
+  content: "";
+}
+
+/* line 29, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-clock-o:before {
+  content: "";
+}
+
+/* line 30, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-road:before {
+  content: "";
+}
+
+/* line 31, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-download:before {
+  content: "";
+}
+
+/* line 32, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrow-circle-o-down:before {
+  content: "";
+}
+
+/* line 33, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrow-circle-o-up:before {
+  content: "";
+}
+
+/* line 34, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-inbox:before {
+  content: "";
+}
+
+/* line 35, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-play-circle-o:before {
+  content: "";
+}
+
+/* line 36, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "";
+}
+
+/* line 38, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-refresh:before {
+  content: "";
+}
+
+/* line 39, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-list-alt:before {
+  content: "";
+}
+
+/* line 40, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-lock:before {
+  content: "";
+}
+
+/* line 41, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-flag:before {
+  content: "";
+}
+
+/* line 42, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-headphones:before {
+  content: "";
+}
+
+/* line 43, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-volume-off:before {
+  content: "";
+}
+
+/* line 44, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-volume-down:before {
+  content: "";
+}
+
+/* line 45, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-volume-up:before {
+  content: "";
+}
+
+/* line 46, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-qrcode:before {
+  content: "";
+}
+
+/* line 47, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-barcode:before {
+  content: "";
+}
+
+/* line 48, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-tag:before {
+  content: "";
+}
+
+/* line 49, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-tags:before {
+  content: "";
+}
+
+/* line 50, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-book:before {
+  content: "";
+}
+
+/* line 51, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bookmark:before {
+  content: "";
+}
+
+/* line 52, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-print:before {
+  content: "";
+}
+
+/* line 53, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-camera:before {
+  content: "";
+}
+
+/* line 54, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-font:before {
+  content: "";
+}
+
+/* line 55, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bold:before {
+  content: "";
+}
+
+/* line 56, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-italic:before {
+  content: "";
+}
+
+/* line 57, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-text-height:before {
+  content: "";
+}
+
+/* line 58, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-text-width:before {
+  content: "";
+}
+
+/* line 59, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-align-left:before {
+  content: "";
+}
+
+/* line 60, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-align-center:before {
+  content: "";
+}
+
+/* line 61, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-align-right:before {
+  content: "";
+}
+
+/* line 62, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-align-justify:before {
+  content: "";
+}
+
+/* line 63, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-list:before {
+  content: "";
+}
+
+/* line 64, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "";
+}
+
+/* line 66, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-indent:before {
+  content: "";
+}
+
+/* line 67, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-video-camera:before {
+  content: "";
+}
+
+/* line 68, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: "";
+}
+
+/* line 71, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-pencil:before {
+  content: "";
+}
+
+/* line 72, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-map-marker:before {
+  content: "";
+}
+
+/* line 73, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-adjust:before {
+  content: "";
+}
+
+/* line 74, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-tint:before {
+  content: "";
+}
+
+/* line 75, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "";
+}
+
+/* line 77, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-share-square-o:before {
+  content: "";
+}
+
+/* line 78, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-check-square-o:before {
+  content: "";
+}
+
+/* line 79, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrows:before {
+  content: "";
+}
+
+/* line 80, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-step-backward:before {
+  content: "";
+}
+
+/* line 81, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-fast-backward:before {
+  content: "";
+}
+
+/* line 82, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-backward:before {
+  content: "";
+}
+
+/* line 83, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-play:before {
+  content: "";
+}
+
+/* line 84, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-pause:before {
+  content: "";
+}
+
+/* line 85, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-stop:before {
+  content: "";
+}
+
+/* line 86, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-forward:before {
+  content: "";
+}
+
+/* line 87, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-fast-forward:before {
+  content: "";
+}
+
+/* line 88, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-step-forward:before {
+  content: "";
+}
+
+/* line 89, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-eject:before {
+  content: "";
+}
+
+/* line 90, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-chevron-left:before {
+  content: "";
+}
+
+/* line 91, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-chevron-right:before {
+  content: "";
+}
+
+/* line 92, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-plus-circle:before {
+  content: "";
+}
+
+/* line 93, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-minus-circle:before {
+  content: "";
+}
+
+/* line 94, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-times-circle:before {
+  content: "";
+}
+
+/* line 95, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-check-circle:before {
+  content: "";
+}
+
+/* line 96, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-question-circle:before {
+  content: "";
+}
+
+/* line 97, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-info-circle:before {
+  content: "";
+}
+
+/* line 98, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-crosshairs:before {
+  content: "";
+}
+
+/* line 99, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-times-circle-o:before {
+  content: "";
+}
+
+/* line 100, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-check-circle-o:before {
+  content: "";
+}
+
+/* line 101, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-ban:before {
+  content: "";
+}
+
+/* line 102, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrow-left:before {
+  content: "";
+}
+
+/* line 103, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrow-right:before {
+  content: "";
+}
+
+/* line 104, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrow-up:before {
+  content: "";
+}
+
+/* line 105, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrow-down:before {
+  content: "";
+}
+
+/* line 106, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "";
+}
+
+/* line 108, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-expand:before {
+  content: "";
+}
+
+/* line 109, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-compress:before {
+  content: "";
+}
+
+/* line 110, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-plus:before {
+  content: "";
+}
+
+/* line 111, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-minus:before {
+  content: "";
+}
+
+/* line 112, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-asterisk:before {
+  content: "";
+}
+
+/* line 113, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-exclamation-circle:before {
+  content: "";
+}
+
+/* line 114, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-gift:before {
+  content: "";
+}
+
+/* line 115, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-leaf:before {
+  content: "";
+}
+
+/* line 116, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-fire:before {
+  content: "";
+}
+
+/* line 117, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-eye:before {
+  content: "";
+}
+
+/* line 118, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-eye-slash:before {
+  content: "";
+}
+
+/* line 119, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "";
+}
+
+/* line 121, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-plane:before {
+  content: "";
+}
+
+/* line 122, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-calendar:before {
+  content: "";
+}
+
+/* line 123, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-random:before {
+  content: "";
+}
+
+/* line 124, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-comment:before {
+  content: "";
+}
+
+/* line 125, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-magnet:before {
+  content: "";
+}
+
+/* line 126, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-chevron-up:before {
+  content: "";
+}
+
+/* line 127, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-chevron-down:before {
+  content: "";
+}
+
+/* line 128, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-retweet:before {
+  content: "";
+}
+
+/* line 129, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-shopping-cart:before {
+  content: "";
+}
+
+/* line 130, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-folder:before {
+  content: "";
+}
+
+/* line 131, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-folder-open:before {
+  content: "";
+}
+
+/* line 132, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrows-v:before {
+  content: "";
+}
+
+/* line 133, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrows-h:before {
+  content: "";
+}
+
+/* line 134, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+  content: "";
+}
+
+/* line 136, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-twitter-square:before {
+  content: "";
+}
+
+/* line 137, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-facebook-square:before {
+  content: "";
+}
+
+/* line 138, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-camera-retro:before {
+  content: "";
+}
+
+/* line 139, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-key:before {
+  content: "";
+}
+
+/* line 140, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-gears:before,
+.fa-cogs:before {
+  content: "";
+}
+
+/* line 142, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-comments:before {
+  content: "";
+}
+
+/* line 143, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-thumbs-o-up:before {
+  content: "";
+}
+
+/* line 144, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-thumbs-o-down:before {
+  content: "";
+}
+
+/* line 145, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-star-half:before {
+  content: "";
+}
+
+/* line 146, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-heart-o:before {
+  content: "";
+}
+
+/* line 147, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sign-out:before {
+  content: "";
+}
+
+/* line 148, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-linkedin-square:before {
+  content: "";
+}
+
+/* line 149, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-thumb-tack:before {
+  content: "";
+}
+
+/* line 150, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-external-link:before {
+  content: "";
+}
+
+/* line 151, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sign-in:before {
+  content: "";
+}
+
+/* line 152, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-trophy:before {
+  content: "";
+}
+
+/* line 153, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-github-square:before {
+  content: "";
+}
+
+/* line 154, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-upload:before {
+  content: "";
+}
+
+/* line 155, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-lemon-o:before {
+  content: "";
+}
+
+/* line 156, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-phone:before {
+  content: "";
+}
+
+/* line 157, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-square-o:before {
+  content: "";
+}
+
+/* line 158, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bookmark-o:before {
+  content: "";
+}
+
+/* line 159, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-phone-square:before {
+  content: "";
+}
+
+/* line 160, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-twitter:before {
+  content: "";
+}
+
+/* line 161, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "";
+}
+
+/* line 163, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-github:before {
+  content: "";
+}
+
+/* line 164, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-unlock:before {
+  content: "";
+}
+
+/* line 165, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-credit-card:before {
+  content: "";
+}
+
+/* line 166, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-feed:before,
+.fa-rss:before {
+  content: "";
+}
+
+/* line 168, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hdd-o:before {
+  content: "";
+}
+
+/* line 169, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bullhorn:before {
+  content: "";
+}
+
+/* line 170, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bell:before {
+  content: "";
+}
+
+/* line 171, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-certificate:before {
+  content: "";
+}
+
+/* line 172, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hand-o-right:before {
+  content: "";
+}
+
+/* line 173, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hand-o-left:before {
+  content: "";
+}
+
+/* line 174, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hand-o-up:before {
+  content: "";
+}
+
+/* line 175, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hand-o-down:before {
+  content: "";
+}
+
+/* line 176, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrow-circle-left:before {
+  content: "";
+}
+
+/* line 177, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrow-circle-right:before {
+  content: "";
+}
+
+/* line 178, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrow-circle-up:before {
+  content: "";
+}
+
+/* line 179, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrow-circle-down:before {
+  content: "";
+}
+
+/* line 180, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-globe:before {
+  content: "";
+}
+
+/* line 181, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-wrench:before {
+  content: "";
+}
+
+/* line 182, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-tasks:before {
+  content: "";
+}
+
+/* line 183, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-filter:before {
+  content: "";
+}
+
+/* line 184, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-briefcase:before {
+  content: "";
+}
+
+/* line 185, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrows-alt:before {
+  content: "";
+}
+
+/* line 186, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-group:before,
+.fa-users:before {
+  content: "";
+}
+
+/* line 188, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-chain:before,
+.fa-link:before {
+  content: "";
+}
+
+/* line 190, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cloud:before {
+  content: "";
+}
+
+/* line 191, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-flask:before {
+  content: "";
+}
+
+/* line 192, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cut:before,
+.fa-scissors:before {
+  content: "";
+}
+
+/* line 194, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-copy:before,
+.fa-files-o:before {
+  content: "";
+}
+
+/* line 196, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-paperclip:before {
+  content: "";
+}
+
+/* line 197, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "";
+}
+
+/* line 199, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-square:before {
+  content: "";
+}
+
+/* line 200, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "";
+}
+
+/* line 203, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-list-ul:before {
+  content: "";
+}
+
+/* line 204, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-list-ol:before {
+  content: "";
+}
+
+/* line 205, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-strikethrough:before {
+  content: "";
+}
+
+/* line 206, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-underline:before {
+  content: "";
+}
+
+/* line 207, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-table:before {
+  content: "";
+}
+
+/* line 208, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-magic:before {
+  content: "";
+}
+
+/* line 209, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-truck:before {
+  content: "";
+}
+
+/* line 210, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-pinterest:before {
+  content: "";
+}
+
+/* line 211, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-pinterest-square:before {
+  content: "";
+}
+
+/* line 212, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-google-plus-square:before {
+  content: "";
+}
+
+/* line 213, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-google-plus:before {
+  content: "";
+}
+
+/* line 214, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-money:before {
+  content: "";
+}
+
+/* line 215, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-caret-down:before {
+  content: "";
+}
+
+/* line 216, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-caret-up:before {
+  content: "";
+}
+
+/* line 217, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-caret-left:before {
+  content: "";
+}
+
+/* line 218, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-caret-right:before {
+  content: "";
+}
+
+/* line 219, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-columns:before {
+  content: "";
+}
+
+/* line 220, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "";
+}
+
+/* line 222, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: "";
+}
+
+/* line 224, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "";
+}
+
+/* line 226, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-envelope:before {
+  content: "";
+}
+
+/* line 227, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-linkedin:before {
+  content: "";
+}
+
+/* line 228, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "";
+}
+
+/* line 230, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-legal:before,
+.fa-gavel:before {
+  content: "";
+}
+
+/* line 232, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "";
+}
+
+/* line 234, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-comment-o:before {
+  content: "";
+}
+
+/* line 235, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-comments-o:before {
+  content: "";
+}
+
+/* line 236, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-flash:before,
+.fa-bolt:before {
+  content: "";
+}
+
+/* line 238, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sitemap:before {
+  content: "";
+}
+
+/* line 239, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-umbrella:before {
+  content: "";
+}
+
+/* line 240, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "";
+}
+
+/* line 242, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-lightbulb-o:before {
+  content: "";
+}
+
+/* line 243, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-exchange:before {
+  content: "";
+}
+
+/* line 244, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cloud-download:before {
+  content: "";
+}
+
+/* line 245, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cloud-upload:before {
+  content: "";
+}
+
+/* line 246, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-user-md:before {
+  content: "";
+}
+
+/* line 247, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-stethoscope:before {
+  content: "";
+}
+
+/* line 248, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-suitcase:before {
+  content: "";
+}
+
+/* line 249, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bell-o:before {
+  content: "";
+}
+
+/* line 250, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-coffee:before {
+  content: "";
+}
+
+/* line 251, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cutlery:before {
+  content: "";
+}
+
+/* line 252, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-file-text-o:before {
+  content: "";
+}
+
+/* line 253, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-building-o:before {
+  content: "";
+}
+
+/* line 254, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hospital-o:before {
+  content: "";
+}
+
+/* line 255, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-ambulance:before {
+  content: "";
+}
+
+/* line 256, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-medkit:before {
+  content: "";
+}
+
+/* line 257, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-fighter-jet:before {
+  content: "";
+}
+
+/* line 258, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-beer:before {
+  content: "";
+}
+
+/* line 259, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-h-square:before {
+  content: "";
+}
+
+/* line 260, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-plus-square:before {
+  content: "";
+}
+
+/* line 261, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-angle-double-left:before {
+  content: "";
+}
+
+/* line 262, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-angle-double-right:before {
+  content: "";
+}
+
+/* line 263, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-angle-double-up:before {
+  content: "";
+}
+
+/* line 264, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-angle-double-down:before {
+  content: "";
+}
+
+/* line 265, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-angle-left:before {
+  content: "";
+}
+
+/* line 266, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-angle-right:before {
+  content: "";
+}
+
+/* line 267, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-angle-up:before {
+  content: "";
+}
+
+/* line 268, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-angle-down:before {
+  content: "";
+}
+
+/* line 269, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-desktop:before {
+  content: "";
+}
+
+/* line 270, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-laptop:before {
+  content: "";
+}
+
+/* line 271, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-tablet:before {
+  content: "";
+}
+
+/* line 272, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "";
+}
+
+/* line 274, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-circle-o:before {
+  content: "";
+}
+
+/* line 275, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-quote-left:before {
+  content: "";
+}
+
+/* line 276, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-quote-right:before {
+  content: "";
+}
+
+/* line 277, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-spinner:before {
+  content: "";
+}
+
+/* line 278, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-circle:before {
+  content: "";
+}
+
+/* line 279, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "";
+}
+
+/* line 281, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-github-alt:before {
+  content: "";
+}
+
+/* line 282, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-folder-o:before {
+  content: "";
+}
+
+/* line 283, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-folder-open-o:before {
+  content: "";
+}
+
+/* line 284, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-smile-o:before {
+  content: "";
+}
+
+/* line 285, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-frown-o:before {
+  content: "";
+}
+
+/* line 286, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-meh-o:before {
+  content: "";
+}
+
+/* line 287, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-gamepad:before {
+  content: "";
+}
+
+/* line 288, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-keyboard-o:before {
+  content: "";
+}
+
+/* line 289, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-flag-o:before {
+  content: "";
+}
+
+/* line 290, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-flag-checkered:before {
+  content: "";
+}
+
+/* line 291, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-terminal:before {
+  content: "";
+}
+
+/* line 292, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-code:before {
+  content: "";
+}
+
+/* line 293, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: "";
+}
+
+/* line 295, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "";
+}
+
+/* line 298, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-location-arrow:before {
+  content: "";
+}
+
+/* line 299, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-crop:before {
+  content: "";
+}
+
+/* line 300, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-code-fork:before {
+  content: "";
+}
+
+/* line 301, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "";
+}
+
+/* line 303, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-question:before {
+  content: "";
+}
+
+/* line 304, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-info:before {
+  content: "";
+}
+
+/* line 305, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-exclamation:before {
+  content: "";
+}
+
+/* line 306, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-superscript:before {
+  content: "";
+}
+
+/* line 307, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-subscript:before {
+  content: "";
+}
+
+/* line 308, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-eraser:before {
+  content: "";
+}
+
+/* line 309, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-puzzle-piece:before {
+  content: "";
+}
+
+/* line 310, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-microphone:before {
+  content: "";
+}
+
+/* line 311, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-microphone-slash:before {
+  content: "";
+}
+
+/* line 312, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-shield:before {
+  content: "";
+}
+
+/* line 313, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-calendar-o:before {
+  content: "";
+}
+
+/* line 314, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-fire-extinguisher:before {
+  content: "";
+}
+
+/* line 315, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-rocket:before {
+  content: "";
+}
+
+/* line 316, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-maxcdn:before {
+  content: "";
+}
+
+/* line 317, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-chevron-circle-left:before {
+  content: "";
+}
+
+/* line 318, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-chevron-circle-right:before {
+  content: "";
+}
+
+/* line 319, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-chevron-circle-up:before {
+  content: "";
+}
+
+/* line 320, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-chevron-circle-down:before {
+  content: "";
+}
+
+/* line 321, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-html5:before {
+  content: "";
+}
+
+/* line 322, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-css3:before {
+  content: "";
+}
+
+/* line 323, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-anchor:before {
+  content: "";
+}
+
+/* line 324, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-unlock-alt:before {
+  content: "";
+}
+
+/* line 325, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bullseye:before {
+  content: "";
+}
+
+/* line 326, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-ellipsis-h:before {
+  content: "";
+}
+
+/* line 327, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-ellipsis-v:before {
+  content: "";
+}
+
+/* line 328, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-rss-square:before {
+  content: "";
+}
+
+/* line 329, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-play-circle:before {
+  content: "";
+}
+
+/* line 330, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-ticket:before {
+  content: "";
+}
+
+/* line 331, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-minus-square:before {
+  content: "";
+}
+
+/* line 332, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-minus-square-o:before {
+  content: "";
+}
+
+/* line 333, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-level-up:before {
+  content: "";
+}
+
+/* line 334, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-level-down:before {
+  content: "";
+}
+
+/* line 335, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-check-square:before {
+  content: "";
+}
+
+/* line 336, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-pencil-square:before {
+  content: "";
+}
+
+/* line 337, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-external-link-square:before {
+  content: "";
+}
+
+/* line 338, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-share-square:before {
+  content: "";
+}
+
+/* line 339, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-compass:before {
+  content: "";
+}
+
+/* line 340, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "";
+}
+
+/* line 342, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "";
+}
+
+/* line 344, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "";
+}
+
+/* line 346, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-euro:before,
+.fa-eur:before {
+  content: "";
+}
+
+/* line 348, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-gbp:before {
+  content: "";
+}
+
+/* line 349, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-dollar:before,
+.fa-usd:before {
+  content: "";
+}
+
+/* line 351, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-rupee:before,
+.fa-inr:before {
+  content: "";
+}
+
+/* line 353, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "";
+}
+
+/* line 357, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "";
+}
+
+/* line 360, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-won:before,
+.fa-krw:before {
+  content: "";
+}
+
+/* line 362, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "";
+}
+
+/* line 364, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-file:before {
+  content: "";
+}
+
+/* line 365, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-file-text:before {
+  content: "";
+}
+
+/* line 366, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sort-alpha-asc:before {
+  content: "";
+}
+
+/* line 367, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sort-alpha-desc:before {
+  content: "";
+}
+
+/* line 368, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sort-amount-asc:before {
+  content: "";
+}
+
+/* line 369, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sort-amount-desc:before {
+  content: "";
+}
+
+/* line 370, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sort-numeric-asc:before {
+  content: "";
+}
+
+/* line 371, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sort-numeric-desc:before {
+  content: "";
+}
+
+/* line 372, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-thumbs-up:before {
+  content: "";
+}
+
+/* line 373, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-thumbs-down:before {
+  content: "";
+}
+
+/* line 374, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-youtube-square:before {
+  content: "";
+}
+
+/* line 375, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-youtube:before {
+  content: "";
+}
+
+/* line 376, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-xing:before {
+  content: "";
+}
+
+/* line 377, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-xing-square:before {
+  content: "";
+}
+
+/* line 378, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-youtube-play:before {
+  content: "";
+}
+
+/* line 379, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-dropbox:before {
+  content: "";
+}
+
+/* line 380, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-stack-overflow:before {
+  content: "";
+}
+
+/* line 381, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-instagram:before {
+  content: "";
+}
+
+/* line 382, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-flickr:before {
+  content: "";
+}
+
+/* line 383, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-adn:before {
+  content: "";
+}
+
+/* line 384, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bitbucket:before {
+  content: "";
+}
+
+/* line 385, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bitbucket-square:before {
+  content: "";
+}
+
+/* line 386, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-tumblr:before {
+  content: "";
+}
+
+/* line 387, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-tumblr-square:before {
+  content: "";
+}
+
+/* line 388, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-long-arrow-down:before {
+  content: "";
+}
+
+/* line 389, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-long-arrow-up:before {
+  content: "";
+}
+
+/* line 390, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-long-arrow-left:before {
+  content: "";
+}
+
+/* line 391, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-long-arrow-right:before {
+  content: "";
+}
+
+/* line 392, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-apple:before {
+  content: "";
+}
+
+/* line 393, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-windows:before {
+  content: "";
+}
+
+/* line 394, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-android:before {
+  content: "";
+}
+
+/* line 395, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-linux:before {
+  content: "";
+}
+
+/* line 396, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-dribbble:before {
+  content: "";
+}
+
+/* line 397, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-skype:before {
+  content: "";
+}
+
+/* line 398, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-foursquare:before {
+  content: "";
+}
+
+/* line 399, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-trello:before {
+  content: "";
+}
+
+/* line 400, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-female:before {
+  content: "";
+}
+
+/* line 401, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-male:before {
+  content: "";
+}
+
+/* line 402, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-gittip:before,
+.fa-gratipay:before {
+  content: "";
+}
+
+/* line 404, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sun-o:before {
+  content: "";
+}
+
+/* line 405, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-moon-o:before {
+  content: "";
+}
+
+/* line 406, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-archive:before {
+  content: "";
+}
+
+/* line 407, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bug:before {
+  content: "";
+}
+
+/* line 408, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-vk:before {
+  content: "";
+}
+
+/* line 409, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-weibo:before {
+  content: "";
+}
+
+/* line 410, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-renren:before {
+  content: "";
+}
+
+/* line 411, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-pagelines:before {
+  content: "";
+}
+
+/* line 412, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-stack-exchange:before {
+  content: "";
+}
+
+/* line 413, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrow-circle-o-right:before {
+  content: "";
+}
+
+/* line 414, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-arrow-circle-o-left:before {
+  content: "";
+}
+
+/* line 415, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "";
+}
+
+/* line 417, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-dot-circle-o:before {
+  content: "";
+}
+
+/* line 418, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-wheelchair:before {
+  content: "";
+}
+
+/* line 419, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-vimeo-square:before {
+  content: "";
+}
+
+/* line 420, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "";
+}
+
+/* line 422, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-plus-square-o:before {
+  content: "";
+}
+
+/* line 423, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-space-shuttle:before {
+  content: "";
+}
+
+/* line 424, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-slack:before {
+  content: "";
+}
+
+/* line 425, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-envelope-square:before {
+  content: "";
+}
+
+/* line 426, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-wordpress:before {
+  content: "";
+}
+
+/* line 427, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-openid:before {
+  content: "";
+}
+
+/* line 428, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "";
+}
+
+/* line 431, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "";
+}
+
+/* line 433, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-yahoo:before {
+  content: "";
+}
+
+/* line 434, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-google:before {
+  content: "";
+}
+
+/* line 435, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-reddit:before {
+  content: "";
+}
+
+/* line 436, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-reddit-square:before {
+  content: "";
+}
+
+/* line 437, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-stumbleupon-circle:before {
+  content: "";
+}
+
+/* line 438, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-stumbleupon:before {
+  content: "";
+}
+
+/* line 439, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-delicious:before {
+  content: "";
+}
+
+/* line 440, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-digg:before {
+  content: "";
+}
+
+/* line 441, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-pied-piper-pp:before {
+  content: "";
+}
+
+/* line 442, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-pied-piper-alt:before {
+  content: "";
+}
+
+/* line 443, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-drupal:before {
+  content: "";
+}
+
+/* line 444, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-joomla:before {
+  content: "";
+}
+
+/* line 445, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-language:before {
+  content: "";
+}
+
+/* line 446, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-fax:before {
+  content: "";
+}
+
+/* line 447, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-building:before {
+  content: "";
+}
+
+/* line 448, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-child:before {
+  content: "";
+}
+
+/* line 449, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-paw:before {
+  content: "";
+}
+
+/* line 450, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-spoon:before {
+  content: "";
+}
+
+/* line 451, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cube:before {
+  content: "";
+}
+
+/* line 452, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cubes:before {
+  content: "";
+}
+
+/* line 453, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-behance:before {
+  content: "";
+}
+
+/* line 454, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-behance-square:before {
+  content: "";
+}
+
+/* line 455, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-steam:before {
+  content: "";
+}
+
+/* line 456, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-steam-square:before {
+  content: "";
+}
+
+/* line 457, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-recycle:before {
+  content: "";
+}
+
+/* line 458, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-automobile:before,
+.fa-car:before {
+  content: "";
+}
+
+/* line 460, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cab:before,
+.fa-taxi:before {
+  content: "";
+}
+
+/* line 462, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-tree:before {
+  content: "";
+}
+
+/* line 463, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-spotify:before {
+  content: "";
+}
+
+/* line 464, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-deviantart:before {
+  content: "";
+}
+
+/* line 465, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-soundcloud:before {
+  content: "";
+}
+
+/* line 466, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-database:before {
+  content: "";
+}
+
+/* line 467, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-file-pdf-o:before {
+  content: "";
+}
+
+/* line 468, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-file-word-o:before {
+  content: "";
+}
+
+/* line 469, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-file-excel-o:before {
+  content: "";
+}
+
+/* line 470, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-file-powerpoint-o:before {
+  content: "";
+}
+
+/* line 471, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "";
+}
+
+/* line 474, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "";
+}
+
+/* line 476, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "";
+}
+
+/* line 478, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "";
+}
+
+/* line 480, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-file-code-o:before {
+  content: "";
+}
+
+/* line 481, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-vine:before {
+  content: "";
+}
+
+/* line 482, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-codepen:before {
+  content: "";
+}
+
+/* line 483, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-jsfiddle:before {
+  content: "";
+}
+
+/* line 484, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "";
+}
+
+/* line 489, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-circle-o-notch:before {
+  content: "";
+}
+
+/* line 490, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-ra:before,
+.fa-resistance:before,
+.fa-rebel:before {
+  content: "";
+}
+
+/* line 493, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-ge:before,
+.fa-empire:before {
+  content: "";
+}
+
+/* line 495, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-git-square:before {
+  content: "";
+}
+
+/* line 496, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-git:before {
+  content: "";
+}
+
+/* line 497, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
+.fa-hacker-news:before {
+  content: "";
+}
+
+/* line 500, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-tencent-weibo:before {
+  content: "";
+}
+
+/* line 501, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-qq:before {
+  content: "";
+}
+
+/* line 502, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "";
+}
+
+/* line 504, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "";
+}
+
+/* line 506, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "";
+}
+
+/* line 508, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-history:before {
+  content: "";
+}
+
+/* line 509, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-circle-thin:before {
+  content: "";
+}
+
+/* line 510, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-header:before {
+  content: "";
+}
+
+/* line 511, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-paragraph:before {
+  content: "";
+}
+
+/* line 512, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sliders:before {
+  content: "";
+}
+
+/* line 513, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-share-alt:before {
+  content: "";
+}
+
+/* line 514, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-share-alt-square:before {
+  content: "";
+}
+
+/* line 515, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bomb:before {
+  content: "";
+}
+
+/* line 516, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: "";
+}
+
+/* line 518, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-tty:before {
+  content: "";
+}
+
+/* line 519, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-binoculars:before {
+  content: "";
+}
+
+/* line 520, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-plug:before {
+  content: "";
+}
+
+/* line 521, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-slideshare:before {
+  content: "";
+}
+
+/* line 522, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-twitch:before {
+  content: "";
+}
+
+/* line 523, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-yelp:before {
+  content: "";
+}
+
+/* line 524, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-newspaper-o:before {
+  content: "";
+}
+
+/* line 525, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-wifi:before {
+  content: "";
+}
+
+/* line 526, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-calculator:before {
+  content: "";
+}
+
+/* line 527, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-paypal:before {
+  content: "";
+}
+
+/* line 528, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-google-wallet:before {
+  content: "";
+}
+
+/* line 529, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cc-visa:before {
+  content: "";
+}
+
+/* line 530, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cc-mastercard:before {
+  content: "";
+}
+
+/* line 531, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cc-discover:before {
+  content: "";
+}
+
+/* line 532, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cc-amex:before {
+  content: "";
+}
+
+/* line 533, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cc-paypal:before {
+  content: "";
+}
+
+/* line 534, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cc-stripe:before {
+  content: "";
+}
+
+/* line 535, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bell-slash:before {
+  content: "";
+}
+
+/* line 536, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bell-slash-o:before {
+  content: "";
+}
+
+/* line 537, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-trash:before {
+  content: "";
+}
+
+/* line 538, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-copyright:before {
+  content: "";
+}
+
+/* line 539, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-at:before {
+  content: "";
+}
+
+/* line 540, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-eyedropper:before {
+  content: "";
+}
+
+/* line 541, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-paint-brush:before {
+  content: "";
+}
+
+/* line 542, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-birthday-cake:before {
+  content: "";
+}
+
+/* line 543, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-area-chart:before {
+  content: "";
+}
+
+/* line 544, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-pie-chart:before {
+  content: "";
+}
+
+/* line 545, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-line-chart:before {
+  content: "";
+}
+
+/* line 546, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-lastfm:before {
+  content: "";
+}
+
+/* line 547, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-lastfm-square:before {
+  content: "";
+}
+
+/* line 548, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-toggle-off:before {
+  content: "";
+}
+
+/* line 549, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-toggle-on:before {
+  content: "";
+}
+
+/* line 550, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bicycle:before {
+  content: "";
+}
+
+/* line 551, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bus:before {
+  content: "";
+}
+
+/* line 552, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-ioxhost:before {
+  content: "";
+}
+
+/* line 553, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-angellist:before {
+  content: "";
+}
+
+/* line 554, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cc:before {
+  content: "";
+}
+
+/* line 555, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+  content: "";
+}
+
+/* line 558, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-meanpath:before {
+  content: "";
+}
+
+/* line 559, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-buysellads:before {
+  content: "";
+}
+
+/* line 560, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-connectdevelop:before {
+  content: "";
+}
+
+/* line 561, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-dashcube:before {
+  content: "";
+}
+
+/* line 562, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-forumbee:before {
+  content: "";
+}
+
+/* line 563, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-leanpub:before {
+  content: "";
+}
+
+/* line 564, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sellsy:before {
+  content: "";
+}
+
+/* line 565, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-shirtsinbulk:before {
+  content: "";
+}
+
+/* line 566, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-simplybuilt:before {
+  content: "";
+}
+
+/* line 567, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-skyatlas:before {
+  content: "";
+}
+
+/* line 568, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cart-plus:before {
+  content: "";
+}
+
+/* line 569, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cart-arrow-down:before {
+  content: "";
+}
+
+/* line 570, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-diamond:before {
+  content: "";
+}
+
+/* line 571, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-ship:before {
+  content: "";
+}
+
+/* line 572, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-user-secret:before {
+  content: "";
+}
+
+/* line 573, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-motorcycle:before {
+  content: "";
+}
+
+/* line 574, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-street-view:before {
+  content: "";
+}
+
+/* line 575, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-heartbeat:before {
+  content: "";
+}
+
+/* line 576, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-venus:before {
+  content: "";
+}
+
+/* line 577, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-mars:before {
+  content: "";
+}
+
+/* line 578, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-mercury:before {
+  content: "";
+}
+
+/* line 579, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-intersex:before,
+.fa-transgender:before {
+  content: "";
+}
+
+/* line 581, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-transgender-alt:before {
+  content: "";
+}
+
+/* line 582, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-venus-double:before {
+  content: "";
+}
+
+/* line 583, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-mars-double:before {
+  content: "";
+}
+
+/* line 584, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-venus-mars:before {
+  content: "";
+}
+
+/* line 585, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-mars-stroke:before {
+  content: "";
+}
+
+/* line 586, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-mars-stroke-v:before {
+  content: "";
+}
+
+/* line 587, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-mars-stroke-h:before {
+  content: "";
+}
+
+/* line 588, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-neuter:before {
+  content: "";
+}
+
+/* line 589, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-genderless:before {
+  content: "";
+}
+
+/* line 590, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-facebook-official:before {
+  content: "";
+}
+
+/* line 591, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-pinterest-p:before {
+  content: "";
+}
+
+/* line 592, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-whatsapp:before {
+  content: "";
+}
+
+/* line 593, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-server:before {
+  content: "";
+}
+
+/* line 594, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-user-plus:before {
+  content: "";
+}
+
+/* line 595, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-user-times:before {
+  content: "";
+}
+
+/* line 596, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hotel:before,
+.fa-bed:before {
+  content: "";
+}
+
+/* line 598, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-viacoin:before {
+  content: "";
+}
+
+/* line 599, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-train:before {
+  content: "";
+}
+
+/* line 600, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-subway:before {
+  content: "";
+}
+
+/* line 601, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-medium:before {
+  content: "";
+}
+
+/* line 602, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-yc:before,
+.fa-y-combinator:before {
+  content: "";
+}
+
+/* line 604, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-optin-monster:before {
+  content: "";
+}
+
+/* line 605, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-opencart:before {
+  content: "";
+}
+
+/* line 606, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-expeditedssl:before {
+  content: "";
+}
+
+/* line 607, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-battery-4:before,
+.fa-battery-full:before {
+  content: "";
+}
+
+/* line 609, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+  content: "";
+}
+
+/* line 611, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-battery-2:before,
+.fa-battery-half:before {
+  content: "";
+}
+
+/* line 613, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+  content: "";
+}
+
+/* line 615, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-battery-0:before,
+.fa-battery-empty:before {
+  content: "";
+}
+
+/* line 617, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-mouse-pointer:before {
+  content: "";
+}
+
+/* line 618, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-i-cursor:before {
+  content: "";
+}
+
+/* line 619, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-object-group:before {
+  content: "";
+}
+
+/* line 620, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-object-ungroup:before {
+  content: "";
+}
+
+/* line 621, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sticky-note:before {
+  content: "";
+}
+
+/* line 622, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-sticky-note-o:before {
+  content: "";
+}
+
+/* line 623, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cc-jcb:before {
+  content: "";
+}
+
+/* line 624, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-cc-diners-club:before {
+  content: "";
+}
+
+/* line 625, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-clone:before {
+  content: "";
+}
+
+/* line 626, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-balance-scale:before {
+  content: "";
+}
+
+/* line 627, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hourglass-o:before {
+  content: "";
+}
+
+/* line 628, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+  content: "";
+}
+
+/* line 630, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+  content: "";
+}
+
+/* line 632, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+  content: "";
+}
+
+/* line 634, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hourglass:before {
+  content: "";
+}
+
+/* line 635, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+  content: "";
+}
+
+/* line 637, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+  content: "";
+}
+
+/* line 639, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hand-scissors-o:before {
+  content: "";
+}
+
+/* line 640, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hand-lizard-o:before {
+  content: "";
+}
+
+/* line 641, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hand-spock-o:before {
+  content: "";
+}
+
+/* line 642, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hand-pointer-o:before {
+  content: "";
+}
+
+/* line 643, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hand-peace-o:before {
+  content: "";
+}
+
+/* line 644, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-trademark:before {
+  content: "";
+}
+
+/* line 645, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-registered:before {
+  content: "";
+}
+
+/* line 646, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-creative-commons:before {
+  content: "";
+}
+
+/* line 647, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-gg:before {
+  content: "";
+}
+
+/* line 648, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-gg-circle:before {
+  content: "";
+}
+
+/* line 649, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-tripadvisor:before {
+  content: "";
+}
+
+/* line 650, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-odnoklassniki:before {
+  content: "";
+}
+
+/* line 651, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-odnoklassniki-square:before {
+  content: "";
+}
+
+/* line 652, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-get-pocket:before {
+  content: "";
+}
+
+/* line 653, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-wikipedia-w:before {
+  content: "";
+}
+
+/* line 654, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-safari:before {
+  content: "";
+}
+
+/* line 655, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-chrome:before {
+  content: "";
+}
+
+/* line 656, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-firefox:before {
+  content: "";
+}
+
+/* line 657, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-opera:before {
+  content: "";
+}
+
+/* line 658, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-internet-explorer:before {
+  content: "";
+}
+
+/* line 659, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-tv:before,
+.fa-television:before {
+  content: "";
+}
+
+/* line 661, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-contao:before {
+  content: "";
+}
+
+/* line 662, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-500px:before {
+  content: "";
+}
+
+/* line 663, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-amazon:before {
+  content: "";
+}
+
+/* line 664, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-calendar-plus-o:before {
+  content: "";
+}
+
+/* line 665, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-calendar-minus-o:before {
+  content: "";
+}
+
+/* line 666, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-calendar-times-o:before {
+  content: "";
+}
+
+/* line 667, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-calendar-check-o:before {
+  content: "";
+}
+
+/* line 668, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-industry:before {
+  content: "";
+}
+
+/* line 669, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-map-pin:before {
+  content: "";
+}
+
+/* line 670, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-map-signs:before {
+  content: "";
+}
+
+/* line 671, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-map-o:before {
+  content: "";
+}
+
+/* line 672, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-map:before {
+  content: "";
+}
+
+/* line 673, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-commenting:before {
+  content: "";
+}
+
+/* line 674, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-commenting-o:before {
+  content: "";
+}
+
+/* line 675, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-houzz:before {
+  content: "";
+}
+
+/* line 676, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-vimeo:before {
+  content: "";
+}
+
+/* line 677, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-black-tie:before {
+  content: "";
+}
+
+/* line 678, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-fonticons:before {
+  content: "";
+}
+
+/* line 679, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-reddit-alien:before {
+  content: "";
+}
+
+/* line 680, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-edge:before {
+  content: "";
+}
+
+/* line 681, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-credit-card-alt:before {
+  content: "";
+}
+
+/* line 682, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-codiepie:before {
+  content: "";
+}
+
+/* line 683, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-modx:before {
+  content: "";
+}
+
+/* line 684, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-fort-awesome:before {
+  content: "";
+}
+
+/* line 685, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-usb:before {
+  content: "";
+}
+
+/* line 686, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-product-hunt:before {
+  content: "";
+}
+
+/* line 687, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-mixcloud:before {
+  content: "";
+}
+
+/* line 688, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-scribd:before {
+  content: "";
+}
+
+/* line 689, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-pause-circle:before {
+  content: "";
+}
+
+/* line 690, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-pause-circle-o:before {
+  content: "";
+}
+
+/* line 691, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-stop-circle:before {
+  content: "";
+}
+
+/* line 692, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-stop-circle-o:before {
+  content: "";
+}
+
+/* line 693, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-shopping-bag:before {
+  content: "";
+}
+
+/* line 694, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-shopping-basket:before {
+  content: "";
+}
+
+/* line 695, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-hashtag:before {
+  content: "";
+}
+
+/* line 696, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bluetooth:before {
+  content: "";
+}
+
+/* line 697, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-bluetooth-b:before {
+  content: "";
+}
+
+/* line 698, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-percent:before {
+  content: "";
+}
+
+/* line 699, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-gitlab:before {
+  content: "";
+}
+
+/* line 700, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-wpbeginner:before {
+  content: "";
+}
+
+/* line 701, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-wpforms:before {
+  content: "";
+}
+
+/* line 702, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-envira:before {
+  content: "";
+}
+
+/* line 703, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-universal-access:before {
+  content: "";
+}
+
+/* line 704, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-wheelchair-alt:before {
+  content: "";
+}
+
+/* line 705, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-question-circle-o:before {
+  content: "";
+}
+
+/* line 706, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-blind:before {
+  content: "";
+}
+
+/* line 707, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-audio-description:before {
+  content: "";
+}
+
+/* line 708, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-volume-control-phone:before {
+  content: "";
+}
+
+/* line 709, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-braille:before {
+  content: "";
+}
+
+/* line 710, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-assistive-listening-systems:before {
+  content: "";
+}
+
+/* line 711, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-asl-interpreting:before,
+.fa-american-sign-language-interpreting:before {
+  content: "";
+}
+
+/* line 713, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-deafness:before,
+.fa-hard-of-hearing:before,
+.fa-deaf:before {
+  content: "";
+}
+
+/* line 716, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-glide:before {
+  content: "";
+}
+
+/* line 717, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-glide-g:before {
+  content: "";
+}
+
+/* line 718, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-signing:before,
+.fa-sign-language:before {
+  content: "";
+}
+
+/* line 720, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-low-vision:before {
+  content: "";
+}
+
+/* line 721, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-viadeo:before {
+  content: "";
+}
+
+/* line 722, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-viadeo-square:before {
+  content: "";
+}
+
+/* line 723, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-snapchat:before {
+  content: "";
+}
+
+/* line 724, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-snapchat-ghost:before {
+  content: "";
+}
+
+/* line 725, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-snapchat-square:before {
+  content: "";
+}
+
+/* line 726, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-pied-piper:before {
+  content: "";
+}
+
+/* line 727, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-first-order:before {
+  content: "";
+}
+
+/* line 728, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-yoast:before {
+  content: "";
+}
+
+/* line 729, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-themeisle:before {
+  content: "";
+}
+
+/* line 730, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+  content: "";
+}
+
+/* line 732, pattern-lab/scss/font-awesome/_icons.scss */
+.fa-fa:before,
+.fa-font-awesome:before {
+  content: "";
+}
+
+/* line 4, pattern-lab/scss/font-awesome/_screen-reader.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* line 51, pattern-lab/scss/font-awesome/_mixins.scss */
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* line 2, pattern-lab/scss/_pattern-lab.scss */
+body {
+  margin: 0;
+  font-size: .8vw;
+  position: relative;
+}
+@media (max-width: 1920px) {
+  /* line 2, pattern-lab/scss/_pattern-lab.scss */
+  body {
+    font-size: 1vw;
+  }
+}
+@media (max-width: 1650px) {
+  /* line 2, pattern-lab/scss/_pattern-lab.scss */
+  body {
+    font-size: 1.2vw;
+  }
+}
+@media (max-width: 1440px) {
+  /* line 2, pattern-lab/scss/_pattern-lab.scss */
+  body {
+    font-size: 1.3vw;
+  }
+}
+@media (max-width: 768px) {
+  /* line 2, pattern-lab/scss/_pattern-lab.scss */
+  body {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 640px) {
+  /* line 2, pattern-lab/scss/_pattern-lab.scss */
+  body {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 480px) {
+  /* line 2, pattern-lab/scss/_pattern-lab.scss */
+  body {
+    font-size: 3vw;
+  }
+}
+
+/* line 88, pattern-lab/scss/_pattern-lab.scss */
+.swatch > div {
+  width: 100%;
+  padding: 1em;
+  border: 3px solid pe-color(white);
+  width: 100%;
+}
+@media (min-width: 641px) {
+  /* line 88, pattern-lab/scss/_pattern-lab.scss */
+  .swatch > div {
+    width: 50%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 88, pattern-lab/scss/_pattern-lab.scss */
+  .swatch > div {
+    width: 33.3%;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 88, pattern-lab/scss/_pattern-lab.scss */
+  .swatch > div {
+    width: 25%;
+  }
+}
+@media (min-width: 1281px) {
+  /* line 88, pattern-lab/scss/_pattern-lab.scss */
+  .swatch > div {
+    width: 20%;
+  }
+}
+
+/* line 97, pattern-lab/scss/_pattern-lab.scss */
+.black-bg {
+  background-color: pe-color(black);
+}
+
+/* line 101, pattern-lab/scss/_pattern-lab.scss */
+.pitch-bg {
+  background-color: pe-color(pitch);
+}
+
+/* line 105, pattern-lab/scss/_pattern-lab.scss */
+.gutenberg-black-bg {
+  background-color: pe-color(gutenberg-black);
+}
+
+/* line 109, pattern-lab/scss/_pattern-lab.scss */
+.asphalt-bg {
+  background-color: pe-color(asphalt);
+}
+
+/* line 113, pattern-lab/scss/_pattern-lab.scss */
+.full-moon-bg {
+  background-color: pe-color(full-moon);
+}
+
+/* line 117, pattern-lab/scss/_pattern-lab.scss */
+.smoke-gray-bg {
+  background-color: pe-color(smoke-gray);
+}
+
+/* line 121, pattern-lab/scss/_pattern-lab.scss */
+.gray-no-1-bg {
+  background-color: pe-color(gray-no-1);
+}
+
+/* line 125, pattern-lab/scss/_pattern-lab.scss */
+.boring-bg {
+  background-color: pe-color(boring);
+}
+
+/* line 129, pattern-lab/scss/_pattern-lab.scss */
+.gray-wash-bg {
+  background-color: pe-color(gray-wash);
+}
+
+/* line 133, pattern-lab/scss/_pattern-lab.scss */
+.sidewalk-bg {
+  background-color: pe-color(sidewalk);
+}
+
+/* line 137, pattern-lab/scss/_pattern-lab.scss */
+.hairline-gray-bg {
+  background-color: pe-color(hairline-gray);
+}
+
+/* line 141, pattern-lab/scss/_pattern-lab.scss */
+.sandy-gray-bg {
+  background-color: pe-color(sandy-gray);
+}
+
+/* line 145, pattern-lab/scss/_pattern-lab.scss */
+.brightly-lit-bg {
+  background-color: pe-color(brightly-lit);
+}
+
+/* line 149, pattern-lab/scss/_pattern-lab.scss */
+.off-white-bg {
+  background-color: pe-color(off-white);
+}
+
+/* line 153, pattern-lab/scss/_pattern-lab.scss */
+.dirty-ice-bg {
+  background-color: pe-color(dirty-ice);
+}
+
+/* line 157, pattern-lab/scss/_pattern-lab.scss */
+.white-bg {
+  background-color: pe-color(white);
+}
+
+/* line 161, pattern-lab/scss/_pattern-lab.scss */
+.deep-sea-bg {
+  background-color: pe-color(deep-sea);
+}
+
+/* line 165, pattern-lab/scss/_pattern-lab.scss */
+.royal-navy-bg {
+  background-color: pe-color(royal-navy);
+}
+
+/* line 169, pattern-lab/scss/_pattern-lab.scss */
+.hyperdrive-bg {
+  background-color: pe-color(hyperdrive);
+}
+
+/* line 173, pattern-lab/scss/_pattern-lab.scss */
+.basic-blue-bg {
+  background-color: pe-color(basic-blue);
+}
+
+/* line 177, pattern-lab/scss/_pattern-lab.scss */
+.sea-bg {
+  background-color: pe-color(sea);
+}
+
+/* line 181, pattern-lab/scss/_pattern-lab.scss */
+.sky-blue-bg {
+  background-color: pe-color(sky-blue);
+}
+
+/* line 185, pattern-lab/scss/_pattern-lab.scss */
+.highlighter-bg {
+  background-color: pe-color(highlighter);
+}
+
+/* line 189, pattern-lab/scss/_pattern-lab.scss */
+.blue-milk-bg {
+  background-color: pe-color(blue-milk);
+}
+
+/* line 193, pattern-lab/scss/_pattern-lab.scss */
+.firetruck-bg {
+  background-color: pe-color(firetruck);
+}
+
+/* line 197, pattern-lab/scss/_pattern-lab.scss */
+.spruce-bg {
+  background-color: pe-color(spruce);
+}
+
+/* line 202, pattern-lab/scss/_pattern-lab.scss */
+.icon-list > li {
+  padding: 5px;
+  width: 100%;
+}
+@media (min-width: 641px) {
+  /* line 202, pattern-lab/scss/_pattern-lab.scss */
+  .icon-list > li {
+    width: 50%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 202, pattern-lab/scss/_pattern-lab.scss */
+  .icon-list > li {
+    width: 33.3%;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 202, pattern-lab/scss/_pattern-lab.scss */
+  .icon-list > li {
+    width: 25%;
+  }
+}
+@media (min-width: 1281px) {
+  /* line 202, pattern-lab/scss/_pattern-lab.scss */
+  .icon-list > li {
+    width: 20%;
+  }
+}
+/* line 206, pattern-lab/scss/_pattern-lab.scss */
+.icon-list > li > span {
+  width: 32px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* line 216, pattern-lab/scss/_pattern-lab.scss */
+.img-spec {
+  max-width: 100%;
+}
+
+/* line 220, pattern-lab/scss/_pattern-lab.scss */
+.presentation {
+  padding: 25px;
+  height: 1280px;
+}
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+/* line 13, pattern-lab/scss/_reset.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 27, pattern-lab/scss/_reset.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 35, pattern-lab/scss/_reset.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 49, pattern-lab/scss/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 62, pattern-lab/scss/_reset.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 72, pattern-lab/scss/_reset.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 81, pattern-lab/scss/_reset.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 92, pattern-lab/scss/_reset.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 105, pattern-lab/scss/_reset.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 115, pattern-lab/scss/_reset.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 125, pattern-lab/scss/_reset.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 135, pattern-lab/scss/_reset.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 144, pattern-lab/scss/_reset.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 154, pattern-lab/scss/_reset.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 165, pattern-lab/scss/_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 173, pattern-lab/scss/_reset.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 182, pattern-lab/scss/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 191, pattern-lab/scss/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 199, pattern-lab/scss/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 203, pattern-lab/scss/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 214, pattern-lab/scss/_reset.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 223, pattern-lab/scss/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 232, pattern-lab/scss/_reset.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 240, pattern-lab/scss/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 252, pattern-lab/scss/_reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 268, pattern-lab/scss/_reset.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 278, pattern-lab/scss/_reset.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 289, pattern-lab/scss/_reset.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 300, pattern-lab/scss/_reset.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 312, pattern-lab/scss/_reset.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 323, pattern-lab/scss/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 336, pattern-lab/scss/_reset.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 350, pattern-lab/scss/_reset.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 359, pattern-lab/scss/_reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 368, pattern-lab/scss/_reset.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 378, pattern-lab/scss/_reset.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 388, pattern-lab/scss/_reset.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 397, pattern-lab/scss/_reset.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 407, pattern-lab/scss/_reset.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 420, pattern-lab/scss/_reset.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 429, pattern-lab/scss/_reset.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 440, pattern-lab/scss/_reset.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 448, pattern-lab/scss/_reset.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 459, pattern-lab/scss/_reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 4, pattern-lab/scss/_helpers.scss */
+.container, .flex-container {
+  padding: 1em;
+}
+
+/* line 8, pattern-lab/scss/_helpers.scss */
+.flex-container {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 13, pattern-lab/scss/_helpers.scss */
+.pos-relative {
+  position: relative;
+}
+
+/* line 16, pattern-lab/scss/_helpers.scss */
+.hide {
+  display: none;
+}
+
+/* line 20, pattern-lab/scss/_helpers.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 26, pattern-lab/scss/_helpers.scss */
+.border {
+  border: 1px solid #efefef;
+}
+
+/* line 30, pattern-lab/scss/_helpers.scss */
+.border-top {
+  border-top: 1px solid #efefef;
+}
+
+/* line 34, pattern-lab/scss/_helpers.scss */
+.border-bottom {
+  border-bottom: 1px solid #efefef;
+}
+
+/* line 38, pattern-lab/scss/_helpers.scss */
+.border-left {
+  border-left: 1px solid #efefef;
+}
+
+/* line 42, pattern-lab/scss/_helpers.scss */
+.border-right {
+  border-right: 1px solid #efefef;
+}
+
+/* line 47, pattern-lab/scss/_helpers.scss */
+.no-margin {
+  margin: 0;
+}
+
+/* line 51, pattern-lab/scss/_helpers.scss */
+.margin-sides {
+  padding: 0 1em;
+}
+
+/* line 55, pattern-lab/scss/_helpers.scss */
+.margin-top-bottom {
+  padding: 1em 0;
+}
+
+/* line 59, pattern-lab/scss/_helpers.scss */
+.margin {
+  margin: 15px;
+}
+
+/* line 63, pattern-lab/scss/_helpers.scss */
+.margin-top {
+  margin-top: 1em;
+}
+
+/* line 67, pattern-lab/scss/_helpers.scss */
+.margin-bottom {
+  margin-bottom: 1em;
+}
+
+/* line 71, pattern-lab/scss/_helpers.scss */
+.margin-left {
+  margin-left: 1em;
+}
+
+/* line 75, pattern-lab/scss/_helpers.scss */
+.margin-left-thin {
+  margin-left: .2em;
+}
+
+/* line 78, pattern-lab/scss/_helpers.scss */
+.margin-right {
+  margin-right: 1em;
+}
+
+/* line 82, pattern-lab/scss/_helpers.scss */
+.margin-left-double {
+  margin-left: 2em;
+}
+
+@media (max-width: 768px) {
+  /* line 86, pattern-lab/scss/_helpers.scss */
+  .no-margin-tablet {
+    margin-left: 0;
+  }
+}
+
+/* line 93, pattern-lab/scss/_helpers.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 97, pattern-lab/scss/_helpers.scss */
+.no-padding-top {
+  padding-top: 0;
+}
+
+/* line 101, pattern-lab/scss/_helpers.scss */
+.padding-sides {
+  padding: 0 1em;
+}
+
+/* line 105, pattern-lab/scss/_helpers.scss */
+.padding-top-bottom {
+  padding: 1em 0;
+}
+
+/* line 109, pattern-lab/scss/_helpers.scss */
+.padding {
+  padding: 15px;
+}
+
+/* line 113, pattern-lab/scss/_helpers.scss */
+.padding-top {
+  padding-top: 1em;
+}
+
+/* line 117, pattern-lab/scss/_helpers.scss */
+.padding-top-double {
+  padding-top: 2em;
+}
+
+/* line 120, pattern-lab/scss/_helpers.scss */
+.padding-bottom {
+  padding-bottom: 1em;
+}
+
+/* line 124, pattern-lab/scss/_helpers.scss */
+.padding-left {
+  padding-left: 1em;
+}
+
+/* line 128, pattern-lab/scss/_helpers.scss */
+.padding-right {
+  padding-right: 1em;
+}
+
+/* line 133, pattern-lab/scss/_helpers.scss */
+.in-btn-left {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+/* line 140, pattern-lab/scss/_helpers.scss */
+.white {
+  color: #fff;
+}
+
+/* line 144, pattern-lab/scss/_helpers.scss */
+.black {
+  color: #000;
+}
+
+/* line 149, pattern-lab/scss/_helpers.scss */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 153, pattern-lab/scss/_helpers.scss */
+.text-align-right {
+  text-align: right;
+}
+
+/* line 157, pattern-lab/scss/_helpers.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 161, pattern-lab/scss/_helpers.scss */
+.flex-container {
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+/* line 167, pattern-lab/scss/_helpers.scss */
+.column {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+/* line 1, pattern-lab/scss/_flex.scss */
+.flex, .flex-container {
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 4, pattern-lab/scss/_flex.scss */
+.flex.wrap, .flex-container.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 8, pattern-lab/scss/_flex.scss */
+.flex.row, .flex-container.row {
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+@media (max-width: 640px) {
+  /* line 8, pattern-lab/scss/_flex.scss */
+  .flex.row, .flex-container.row {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+/* line 16, pattern-lab/scss/_flex.scss */
+.flex.align-center, .flex-container.align-center {
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 20, pattern-lab/scss/_flex.scss */
+.flex.justify-center, .flex-container.justify-center {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+/* line 24, pattern-lab/scss/_flex.scss */
+.flex.justify-between, .flex-container.justify-between {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+/* line 29, pattern-lab/scss/_flex.scss */
+.flex-grow {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+/* line 1, pattern-lab/source/_patterns/00-atoms/_headings.scss */
+h1 {
+  color: #58585a;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+  font-weight: normal;
+}
+@media (max-width: 640px) {
+  /* line 1, pattern-lab/source/_patterns/00-atoms/_headings.scss */
+  h1 {
+    font-weight: bold;
+  }
+}
+
+/* line 12, pattern-lab/source/_patterns/00-atoms/_headings.scss */
+h2 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2.7em;
+  text-transform: uppercase;
+}
+@media (max-width: 640px) {
+  /* line 12, pattern-lab/source/_patterns/00-atoms/_headings.scss */
+  h2 {
+    font-size: 3em;
+  }
+}
+
+/* line 22, pattern-lab/source/_patterns/00-atoms/_headings.scss */
+h3 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/* line 1, pattern-lab/source/_patterns/00-atoms/_logo.scss */
+.logo {
+  width: 300px;
+}
+@media (max-width: 1440px) {
+  /* line 1, pattern-lab/source/_patterns/00-atoms/_logo.scss */
+  .logo {
+    width: 250px;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/00-atoms/_paragraph.scss */
+p {
+  color: #58585a;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 640px) {
+  /* line 1, pattern-lab/source/_patterns/00-atoms/_paragraph.scss */
+  p {
+    font-size: 2em;
+  }
+}
+@media (max-width: 768px) {
+  /* line 1, pattern-lab/source/_patterns/00-atoms/_paragraph.scss */
+  p {
+    font-size: 1.8em;
+  }
+}
+
+/* line 8, pattern-lab/source/_patterns/00-atoms/_paragraph.scss */
+.large {
+  font-size: 1.5em;
+}
+@media (max-width: 768px) {
+  /* line 8, pattern-lab/source/_patterns/00-atoms/_paragraph.scss */
+  .large {
+    font-size: 1.8em;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/00-atoms/_buttons.scss */
+.button {
+  padding: 10px;
+  font-family: Arial,Helvetica,sans-serif;
+  color: #43681e;
+  border: 1px solid #43681e;
+  border-radius: 3px;
+  background-color: #A9D979;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+  cursor: pointer;
+}
+/* line 85, pattern-lab/scss/_mixins.scss */
+.button:hover {
+  background-color: #c3e4a1;
+  color: #43681e;
+}
+@media (max-width: 768px) {
+  /* line 1, pattern-lab/source/_patterns/00-atoms/_buttons.scss */
+  .button {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 640px) {
+  /* line 1, pattern-lab/source/_patterns/00-atoms/_buttons.scss */
+  .button {
+    padding: 1em;
+    display: block;
+    text-align: center;
+  }
+}
+/* line 5, pattern-lab/source/_patterns/00-atoms/_buttons.scss */
+.button.primary {
+  padding: 10px;
+  font-family: Arial,Helvetica,sans-serif;
+  color: #130504;
+  border: 1px solid #130504;
+  border-radius: 3px;
+  background-color: #bc3227;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+  color: #fff;
+}
+/* line 85, pattern-lab/scss/_mixins.scss */
+.button.primary:hover {
+  background-color: #d74a3f;
+  color: #130504;
+}
+@media (max-width: 768px) {
+  /* line 5, pattern-lab/source/_patterns/00-atoms/_buttons.scss */
+  .button.primary {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 640px) {
+  /* line 5, pattern-lab/source/_patterns/00-atoms/_buttons.scss */
+  .button.primary {
+    padding: 1em;
+    display: block;
+    text-align: center;
+  }
+}
+/* line 8, pattern-lab/source/_patterns/00-atoms/_buttons.scss */
+.button.primary:hover {
+  color: #fff;
+}
+
+/* line 1, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+.nav-list-item {
+  background-color: #bc3227;
+  list-style-type: none;
+  color: #fff;
+  font-family: "Rajdhani", sans-serif;
+  -ms-flex: 1;
+      flex: 1;
+  text-align: center;
+  border-right: 1px solid #d74a3f;
+}
+@media (max-width: 768px) {
+  /* line 1, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+  .nav-list-item {
+    padding: 0;
+  }
+}
+/* line 15, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+.nav-list-item:last-child {
+  border-right: 0;
+}
+/* line 19, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+.nav-list-item a {
+  color: #fff;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .6em .1em;
+  text-transform: uppercase;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-size: 1.2em;
+}
+/* line 29, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+.nav-list-item a:hover {
+  background-color: #d74a3f;
+}
+/* line 32, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+.nav-list-item a.active {
+  background-color: #d74a3f;
+}
+/* line 36, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+.nav-list-item img {
+  width: 27px;
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  /* line 36, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+  .nav-list-item img {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 640px) {
+  /* line 36, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+  .nav-list-item img {
+    margin-bottom: 0;
+  }
+}
+/* line 47, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+.nav-list-item .hide-tablet {
+  margin-left: 5px;
+}
+@media (max-width: 768px) {
+  /* line 47, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+  .nav-list-item .hide-tablet {
+    margin: 0;
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  /* line 55, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+  .nav-list-item .text {
+    font-size: .3em;
+    margin-top: .3em;
+  }
+}
+
+/* line 63, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+.item-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+@media (max-width: 768px) {
+  /* line 63, pattern-lab/source/_patterns/00-atoms/_nav-list-item.scss */
+  .item-container {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/00-atoms/_input.scss */
+input {
+  padding: .5em 1em;
+  border: 1px solid #bebec0;
+  width: 100%;
+  color: #58585a;
+  border-radius: 3px;
+  box-shadow: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+@media (max-width: 768px) {
+  /* line 1, pattern-lab/source/_patterns/00-atoms/_input.scss */
+  input {
+    font-size: 1.5em;
+  }
+}
+/* line 14, pattern-lab/source/_patterns/00-atoms/_input.scss */
+input:focus {
+  border: 1px solid #8b8b8d;
+  box-shadow: 0;
+  outline: 0;
+}
+/* line 20, pattern-lab/source/_patterns/00-atoms/_input.scss */
+input.error {
+  border: 1px solid #92271e;
+}
+
+/* line 1, pattern-lab/source/_patterns/00-atoms/_select.scss */
+.select {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  background: #fff;
+}
+@media (max-width: 768px) {
+  /* line 1, pattern-lab/source/_patterns/00-atoms/_select.scss */
+  .select {
+    font-size: 1.5em;
+  }
+}
+/* line 12, pattern-lab/source/_patterns/00-atoms/_select.scss */
+.select .fa {
+  position: absolute;
+  padding-right: 1em;
+  color: #bc3227;
+  z-index: 0;
+  right: 0;
+  top: 13px;
+}
+
+/* line 21, pattern-lab/source/_patterns/00-atoms/_select.scss */
+select {
+  padding: .5em 1em;
+  border: 1px solid #bebec0;
+  width: 100%;
+  color: #58585a;
+  border-radius: 3px;
+  background: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  z-index: 1;
+}
+/* line 32, pattern-lab/source/_patterns/00-atoms/_select.scss */
+select:focus {
+  border: 1px solid #8b8b8d;
+  box-shadow: 0;
+  outline: 0;
+}
+/* line 38, pattern-lab/source/_patterns/00-atoms/_select.scss */
+select.error {
+  border: 1px solid #92271e;
+}
+
+/* line 1, pattern-lab/source/_patterns/00-atoms/_checkbox.scss */
+.checkbox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin-bottom: 1em;
+}
+/* line 7, pattern-lab/source/_patterns/00-atoms/_checkbox.scss */
+.checkbox label {
+  width: auto;
+  margin: 0 .5em;
+}
+@media (max-width: 768px) {
+  /* line 7, pattern-lab/source/_patterns/00-atoms/_checkbox.scss */
+  .checkbox label {
+    font-size: 1.5em;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/00-atoms/_links.scss */
+a {
+  color: #bc3227;
+}
+/* line 3, pattern-lab/source/_patterns/00-atoms/_links.scss */
+a:hover {
+  color: #d74a3f;
+}
+
+/* line 1, pattern-lab/source/_patterns/00-atoms/_map.scss */
+.map {
+  padding-left: 0;
+}
+
+/* line 10, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+.rating-block .rating {
+  font-size: 25px;
+}
+@media (max-width: 640px) {
+  /* line 10, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+  .rating-block .rating {
+    font-size: 1.6em;
+  }
+}
+
+/* line 18, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+.rating {
+  margin: 10px 0;
+}
+
+/* line 22, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+.rating i {
+  display: inline-block;
+  width: 0;
+  height: 1.5em;
+  border-width: 0 0.75em;
+  border-style: solid;
+  border-color: #eee;
+  border-radius: .22em;
+  color: white;
+  background: #eee;
+  font-style: normal;
+  line-height: 1.6em;
+  text-indent: -0.5em;
+  text-shadow: 1px 0 1px #b3b3b3;
+}
+
+/** Colors */
+/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='1'] .star-1 {
+  border-color: #cc8b1f;
+  background: #cc8b1f;
+}
+
+/* line 54, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='1.5'] .star-2 {
+  border-left-color: #cc8b1f;
+}
+
+/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='2'] .star-1 {
+  border-color: #dcb228;
+  background: #dcb228;
+}
+
+/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='2'] .star-2 {
+  border-color: #dcb228;
+  background: #dcb228;
+}
+
+/* line 54, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='2.5'] .star-3 {
+  border-left-color: #dcb228;
+}
+
+/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='3'] .star-1 {
+  border-color: #f0991e;
+  background: #f0991e;
+}
+
+/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='3'] .star-2 {
+  border-color: #f0991e;
+  background: #f0991e;
+}
+
+/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='3'] .star-3 {
+  border-color: #f0991e;
+  background: #f0991e;
+}
+
+/* line 54, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='3.5'] .star-4 {
+  border-left-color: #f0991e;
+}
+
+/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='4'] .star-1 {
+  border-color: #f26a2c;
+  background: #f26a2c;
+}
+
+/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='4'] .star-2 {
+  border-color: #f26a2c;
+  background: #f26a2c;
+}
+
+/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='4'] .star-3 {
+  border-color: #f26a2c;
+  background: #f26a2c;
+}
+
+/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='4'] .star-4 {
+  border-color: #f26a2c;
+  background: #f26a2c;
+}
+
+/* line 54, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating^='4.5'] .star-5 {
+  border-left-color: #f26a2c;
+}
+
+/* line 59, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+[data-rating="5"] i {
+  background: #dd050b;
+  border-color: #dd050b;
+}
+
+/** Print */
+@media print {
+  /* line 69, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+  .rating {
+    -webkit-print-color-adjust: exact;
+  }
+  /* line 71, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+  .rating i {
+    text-shadow: none;
+  }
+}
+/* line 2, pattern-lab/source/_patterns/00-atoms/_profile-pic.scss */
+.profile-pic img {
+  border-radius: 50%;
+}
+
+/* line 1, pattern-lab/source/_patterns/01-molecules/_navigation.scss */
+.nav-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  color: #fff;
+  line-height: auto;
+  font-family: "Rajdhani", sans-serif;
+  width: 100%;
+  margin: 0;
+  background-color: #bc3227;
+  padding: 0;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 640px) {
+  /* line 1, pattern-lab/source/_patterns/01-molecules/_navigation.scss */
+  .nav-list {
+    font-size: 2em;
+  }
+}
+/* line 12, pattern-lab/source/_patterns/01-molecules/_navigation.scss */
+.nav-list a:hover {
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  /* line 17, pattern-lab/source/_patterns/01-molecules/_navigation.scss */
+  .nav-list .optional {
+    display: none;
+  }
+}
+/* line 23, pattern-lab/source/_patterns/01-molecules/_navigation.scss */
+.nav-list .nav-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+@media (max-width: 750px) {
+  /* line 23, pattern-lab/source/_patterns/01-molecules/_navigation.scss */
+  .nav-list .nav-item {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/01-molecules/_image-panel.scss */
+.panel {
+  background-image: url("http://placehold.it/100p");
+  padding: 8em 5em;
+  border-bottom: 1px solid #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: bottom;
+  position: relative;
+}
+@media (max-width: 640px) {
+  /* line 1, pattern-lab/source/_patterns/01-molecules/_image-panel.scss */
+  .panel {
+    padding: 5em 2em;
+  }
+}
+/* line 14, pattern-lab/source/_patterns/01-molecules/_image-panel.scss */
+.panel h2 {
+  margin: 0;
+}
+/* line 17, pattern-lab/source/_patterns/01-molecules/_image-panel.scss */
+.panel p {
+  margin-top: 0;
+}
+/* line 21, pattern-lab/source/_patterns/01-molecules/_image-panel.scss */
+.panel.left {
+  text-align: left;
+}
+/* line 25, pattern-lab/source/_patterns/01-molecules/_image-panel.scss */
+.panel.right {
+  text-align: right;
+}
+
+/* line 30, pattern-lab/source/_patterns/01-molecules/_image-panel.scss */
+.panel-content {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 640px) {
+  /* line 30, pattern-lab/source/_patterns/01-molecules/_image-panel.scss */
+  .panel-content {
+    text-align: center;
+  }
+}
+
+/* line 37, pattern-lab/source/_patterns/01-molecules/_image-panel.scss */
+.nutrition {
+  background-image: url("../images/nutrition.jpg");
+}
+
+/* line 41, pattern-lab/source/_patterns/01-molecules/_image-panel.scss */
+.fitness {
+  background-image: url("../images/training.jpg");
+}
+@media (max-width: 640px) {
+  /* line 41, pattern-lab/source/_patterns/01-molecules/_image-panel.scss */
+  .fitness {
+    background-position: center;
+  }
+}
+
+/* line 48, pattern-lab/source/_patterns/01-molecules/_image-panel.scss */
+.mobile-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .2;
+  z-index: 1;
+  background: #000;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 1, pattern-lab/source/_patterns/01-molecules/_panel-heading.scss */
+.content {
+  background: none;
+  text-align: center;
+  border: 0;
+}
+@media (max-width: 640px) {
+  /* line 1, pattern-lab/source/_patterns/01-molecules/_panel-heading.scss */
+  .content {
+    padding: 5em 2em;
+  }
+}
+/* line 10, pattern-lab/source/_patterns/01-molecules/_panel-heading.scss */
+.content h2 {
+  color: #58585a;
+}
+
+/* line 1, pattern-lab/source/_patterns/01-molecules/_trainer.scss */
+.trainer {
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+  background: #fff;
+  border-radius: 5px;
+  -ms-flex: 1;
+      flex: 1;
+}
+@media (max-width: 640px) {
+  /* line 1, pattern-lab/source/_patterns/01-molecules/_trainer.scss */
+  .trainer {
+    margin: 0;
+    margin-bottom: 2em;
+  }
+}
+/* line 14, pattern-lab/source/_patterns/01-molecules/_trainer.scss */
+.trainer h3 {
+  color: #bc3227;
+}
+@media (max-width: 640px) {
+  /* line 14, pattern-lab/source/_patterns/01-molecules/_trainer.scss */
+  .trainer h3 {
+    font-size: 2.5em;
+  }
+}
+
+/* line 21, pattern-lab/source/_patterns/01-molecules/_trainer.scss */
+.trainer-img {
+  border-radius: 50%;
+  width: 300px;
+  max-width: 100%;
+}
+
+/* line 1, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.price-table {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+/* line 6, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+/* line 11, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor li {
+  width: 100%;
+  list-style-type: none;
+  padding: .8em;
+  text-align: center;
+  color: #58585a;
+  margin: 0;
+}
+/* line 18, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor li:nth-child(even) {
+  background-color: #efefef;
+}
+/* line 22, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor li .fa-times {
+  color: #bc3227;
+}
+/* line 25, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor li .fa-check {
+  color: green;
+}
+/* line 28, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor li span {
+  padding: 0 .3em;
+}
+/* line 32, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor .special {
+  background-color: #333;
+  color: #fff;
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+/* line 39, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor .special.price {
+  background-color: #58585a;
+}
+/* line 43, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor .special.name {
+  border-radius: 10px 10px 0 0;
+}
+/* line 49, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor.orenda {
+  font-size: 1em;
+}
+@media (max-width: 768px) {
+  /* line 49, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+  .competitor.orenda {
+    font-size: 1.8em;
+  }
+}
+/* line 54, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor.orenda .name {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #92271e;
+  font-size: 1.5em;
+}
+@media (max-width: 768px) {
+  /* line 54, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+  .competitor.orenda .name {
+    font-size: 1.5em;
+  }
+}
+/* line 62, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor.orenda .name img {
+  width: 30px;
+  margin-right: .3em;
+}
+@media (max-width: 768px) {
+  /* line 62, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+  .competitor.orenda .name img {
+    margin: 0;
+    width: 50x;
+  }
+}
+/* line 72, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor.orenda .price {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #bc3227;
+  font-size: 1.5em;
+}
+@media (max-width: 768px) {
+  /* line 72, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+  .competitor.orenda .price {
+    font-size: 1.5em;
+  }
+}
+/* line 79, pattern-lab/source/_patterns/01-molecules/_price-table.scss */
+.competitor.orenda .price .starts {
+  font-size: .5em;
+}
+
+/* line 1, pattern-lab/source/_patterns/01-molecules/_input-group.scss */
+.input {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-bottom: 1em;
+  width: 100%;
+  -ms-flex: 1;
+      flex: 1;
+}
+
+/* line 10, pattern-lab/source/_patterns/01-molecules/_input-group.scss */
+label {
+  font-size: .875em;
+  margin-bottom: .5em;
+  color: #58585a;
+  width: 100%;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  /* line 10, pattern-lab/source/_patterns/01-molecules/_input-group.scss */
+  label {
+    font-size: 1em;
+  }
+}
+/* line 22, pattern-lab/source/_patterns/01-molecules/_input-group.scss */
+label.error {
+  background-color: #bc3227;
+  color: #fff;
+  font-size: .875em;
+  padding: .3em;
+  margin-bottom: 0;
+  margin-top: -2px;
+}
+
+@media (max-width: 768px) {
+  /* line 1, pattern-lab/source/_patterns/01-molecules/_info-links.scss */
+  .info-links {
+    padding: 3em 0;
+  }
+}
+/* line 5, pattern-lab/source/_patterns/01-molecules/_info-links.scss */
+.info-links li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin: 0;
+  height: 2em;
+  color: #58585a;
+}
+@media (max-width: 768px) {
+  /* line 5, pattern-lab/source/_patterns/01-molecules/_info-links.scss */
+  .info-links li {
+    font-size: 1.5em;
+  }
+}
+/* line 15, pattern-lab/source/_patterns/01-molecules/_info-links.scss */
+.info-links li .fa {
+  min-width: 2.5rem;
+}
+@media (max-width: 640px) {
+  /* line 21, pattern-lab/source/_patterns/01-molecules/_info-links.scss */
+  .info-links .address {
+    display: none;
+  }
+}
+@media (min-width: 640px) {
+  /* line 26, pattern-lab/source/_patterns/01-molecules/_info-links.scss */
+  .info-links .open-maps {
+    display: none;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+.yelp-review {
+  padding: 2em;
+  border-radius: 5px;
+  background-color: #fff;
+}
+/* line 7, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+.yelp-review img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1em;
+}
+@media (max-width: 400px) {
+  /* line 7, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  .yelp-review img {
+    width: 60px;
+    height: 60px;
+  }
+}
+/* line 18, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+.yelp-review .yelp-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+@media (min-width: 1920px) {
+  /* line 18, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  .yelp-review .yelp-content {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+@media (max-width: 768px) {
+  /* line 18, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  .yelp-review .yelp-content {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+@media (max-width: 640px) {
+  /* line 18, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  .yelp-review .yelp-content {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+/* line 34, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+.yelp-review .yelp-content > div {
+  padding-right: 1.5em;
+}
+@media (max-width: 768px) {
+  /* line 34, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  .yelp-review .yelp-content > div {
+    text-align: left;
+  }
+}
+@media (max-width: 640px) {
+  /* line 34, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  .yelp-review .yelp-content > div {
+    text-align: center;
+  }
+}
+@media (min-width: 1920px) {
+  /* line 46, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  .yelp-review .yelp-content .yelper-info {
+    text-align: left;
+  }
+}
+/* line 51, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+.yelp-review .yelp-content .yelper-rating {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+@media (max-width: 640px) {
+  /* line 51, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  .yelp-review .yelp-content .yelper-rating {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/* line 58, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+.yelp-review .yelp-content .yelper-rating .rating {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+/* line 62, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+.yelp-review .yelp-content .yelper-rating .rating i {
+  margin: 0 .1em;
+}
+/* line 70, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+.yelp-review .yelp-content h3 {
+  margin: 0;
+}
+/* line 73, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+.yelp-review .yelp-content h4 {
+  margin: 0;
+  color: #8b8b8d;
+}
+
+/* line 1, pattern-lab/source/_patterns/02-organisms/_header.scss */
+header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 5em;
+  text-align: center;
+  padding-bottom: 2em;
+  border-bottom: 5px solid #bc3227;
+}
+@media (max-width: 768px) {
+  /* line 1, pattern-lab/source/_patterns/02-organisms/_header.scss */
+  header {
+    padding-bottom: 2em;
+  }
+}
+@media (max-width: 640px) {
+  /* line 1, pattern-lab/source/_patterns/02-organisms/_header.scss */
+  header {
+    padding: 2em;
+  }
+}
+
+/* line 15, pattern-lab/source/_patterns/02-organisms/_header.scss */
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+@media (min-width: 769px) {
+  /* line 15, pattern-lab/source/_patterns/02-organisms/_header.scss */
+  nav {
+    top: 0;
+    margin-top: 0;
+    box-shadow: 0px 3px 35px -9px rgba(0, 0, 0, 0.75);
+  }
+}
+@media (max-width: 768px) {
+  /* line 15, pattern-lab/source/_patterns/02-organisms/_header.scss */
+  nav {
+    bottom: 0;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/02-organisms/_trainer-block.scss */
+.trainer-block {
+  background-color: #f5eada;
+  border-top: 5px solid #bc3227;
+}
+
+/* line 5, pattern-lab/source/_patterns/02-organisms/_trainer-block.scss */
+.our-trainers {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+@media (max-width: 768px) {
+  /* line 5, pattern-lab/source/_patterns/02-organisms/_trainer-block.scss */
+  .our-trainers {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+.membership-block {
+  background-color: #333;
+  border-top: 5px solid #bc3227;
+}
+/* line 6, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+.membership-block .panel.content h2 {
+  color: #8b8b8d;
+}
+/* line 9, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+.membership-block .panel.content p {
+  color: #8b8b8d;
+}
+/* line 14, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+.membership-block .price-comparisons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 19, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+.membership-block .col {
+  -ms-flex: 1;
+      flex: 1;
+}
+@media (768px) {
+  /* line 19, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+  .membership-block .col {
+    -ms-flex-order: 1;
+        order: 1;
+    -ms-flex: auto;
+        flex: auto;
+  }
+}
+/* line 25, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+.membership-block .col.orenda {
+  -ms-flex: 2;
+      flex: 2;
+}
+@media (max-width: 768px) {
+  /* line 25, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+  .membership-block .col.orenda {
+    -ms-flex-order: 3;
+        order: 3;
+    -ms-flex: auto;
+        flex: auto;
+    width: 100%;
+  }
+}
+
+/* line 36, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+.lifetime {
+  font-size: .875em;
+}
+@media (max-width: 768px) {
+  /* line 36, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+  .lifetime {
+    margin-bottom: 2em;
+  }
+}
+@media (max-width: 640px) {
+  /* line 36, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+  .lifetime {
+    display: none;
+  }
+}
+
+/* line 47, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+.mountainside {
+  font-size: .875em;
+}
+@media (max-width: 768px) {
+  /* line 47, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+  .mountainside {
+    margin-bottom: 2em;
+  }
+}
+@media (max-width: 640px) {
+  /* line 47, pattern-lab/source/_patterns/02-organisms/_membership-block.scss */
+  .mountainside {
+    display: none;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/02-organisms/_contact-form.scss */
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 100%;
+}
+/* line 7, pattern-lab/source/_patterns/02-organisms/_contact-form.scss */
+.row .left {
+  margin-right: .5em;
+}
+/* line 10, pattern-lab/source/_patterns/02-organisms/_contact-form.scss */
+.row .input.right {
+  margin-left: .5em;
+}
+@media (max-width: 640px) {
+  /* line 10, pattern-lab/source/_patterns/02-organisms/_contact-form.scss */
+  .row .input.right {
+    margin-top: 0;
+  }
+}
+
+/* line 18, pattern-lab/source/_patterns/02-organisms/_contact-form.scss */
+.checkbox-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+/* line 23, pattern-lab/source/_patterns/02-organisms/_contact-form.scss */
+.checkbox-group > label {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #bebec0;
+  padding-bottom: .5em;
+}
+
+/* line 30, pattern-lab/source/_patterns/02-organisms/_contact-form.scss */
+.btn-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+/* line 34, pattern-lab/source/_patterns/02-organisms/_contact-form.scss */
+.btn-container a {
+  width: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  /* line 34, pattern-lab/source/_patterns/02-organisms/_contact-form.scss */
+  .btn-container a {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  /* line 42, pattern-lab/source/_patterns/02-organisms/_contact-form.scss */
+  .btn-container button {
+    width: 100%;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/02-organisms/_contact-block.scss */
+.contact-container {
+  padding: 1em;
+  background: #efefef;
+  border: 1px solid #bebec0;
+  border-radius: 5px;
+}
+@media (max-width: 640px) {
+  /* line 1, pattern-lab/source/_patterns/02-organisms/_contact-block.scss */
+  .contact-container {
+    background: none;
+    border: 0;
+    padding: 0;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/02-organisms/_get-started-block.scss */
+.get-started-block {
+  border-top: 5px solid #bc3227;
+}
+
+/* line 4, pattern-lab/source/_patterns/02-organisms/_get-started-block.scss */
+.form-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  padding-top: 2em;
+}
+@media (max-width: 768px) {
+  /* line 4, pattern-lab/source/_patterns/02-organisms/_get-started-block.scss */
+  .form-container {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+/* line 16, pattern-lab/source/_patterns/02-organisms/_get-started-block.scss */
+.form-container > div {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+/* line 22, pattern-lab/source/_patterns/02-organisms/_get-started-block.scss */
+.map {
+  padding-top: 2em;
+}
+@media (max-width: 768px) {
+  /* line 22, pattern-lab/source/_patterns/02-organisms/_get-started-block.scss */
+  .map {
+    padding: 0;
+  }
+}
+/* line 28, pattern-lab/source/_patterns/02-organisms/_get-started-block.scss */
+.map img {
+  max-width: 100%;
+}
+
+/* line 1, pattern-lab/source/_patterns/02-organisms/_footer.scss */
+footer {
+  background: #92271e;
+  color: #fff;
+  font-family: "Rajdhani", sans-serif;
+}
+@media (max-width: 768px) {
+  /* line 1, pattern-lab/source/_patterns/02-organisms/_footer.scss */
+  footer {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 768px) {
+  /* line 1, pattern-lab/source/_patterns/02-organisms/_footer.scss */
+  footer {
+    margin-bottom: 4.1em;
+  }
+}
+/* line 14, pattern-lab/source/_patterns/02-organisms/_footer.scss */
+footer a {
+  color: #fff;
+}
+/* line 17, pattern-lab/source/_patterns/02-organisms/_footer.scss */
+footer a:hover {
+  color: #fff;
+}
+/* line 22, pattern-lab/source/_patterns/02-organisms/_footer.scss */
+footer span {
+  margin: 0 1em;
+}
+@media (max-width: 768px) {
+  /* line 22, pattern-lab/source/_patterns/02-organisms/_footer.scss */
+  footer span {
+    margin: .5em;
+  }
+}
+/* line 30, pattern-lab/source/_patterns/02-organisms/_footer.scss */
+footer .panel.content {
+  padding: 3em;
+}
+@media (max-width: 768px) {
+  /* line 30, pattern-lab/source/_patterns/02-organisms/_footer.scss */
+  footer .panel.content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+.yelp-block {
+  background: #92271e;
+  border-top: 5px solid #bc3227;
+}
+/* line 4, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+.yelp-block h2 {
+  color: #fff;
+}
+/* line 7, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+.yelp-block p {
+  color: #fff;
+  margin-right: 1em;
+  margin-bottom: 0;
+}
+/* line 12, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+.yelp-block p.review-text {
+  color: #8b8b8d;
+  text-align: left;
+  margin-top: 1em;
+}
+/* line 18, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+.yelp-block .rating-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 1em;
+}
+@media (max-width: 480px) {
+  /* line 18, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+  .yelp-block .rating-block {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+/* line 28, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+.yelp-block .display-reviews {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+@media (min-width: 768px) {
+  /* line 28, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+  .yelp-block .display-reviews {
+    -ms-flex-align: center;
+        align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  /* line 28, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+  .yelp-block .display-reviews {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+/* line 39, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+.yelp-block .display-reviews .col {
+  -ms-flex: 1;
+      flex: 1;
+  margin: 0 1em;
+}
+@media (max-width: 768px) {
+  /* line 39, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+  .yelp-block .display-reviews .col {
+    margin: 1em 0;
+  }
+}
+/* line 47, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+.yelp-block .display-reviews .col:first-child {
+  margin-left: 0;
+}
+/* line 51, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+.yelp-block .display-reviews .col:last-child {
+  margin-right: 0;
+}
+
+/* line 58, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+.yelp-link {
+  margin-top: 1em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+/* line 64, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+.yelp-link p {
+  margin-top: .5em;
+}
+/* line 67, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
+.yelp-link img {
+  width: 150px;
+}
