@@ -15,6 +15,7 @@ const yelpBusinessData = require('./yelpBusinessData');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}!`);
 });
