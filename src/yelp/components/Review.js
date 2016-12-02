@@ -1,13 +1,15 @@
 import React from "react";
+import dateFormat from 'dateformat';
 
 const YelpList = (props) => {
-    console.log(props, 'review')
+    const now = props.time_created;
+    const newDate = dateFormat(now, "mmmm dS, yyyy");
     let image;
-    if (props.picture === null) {
+
+    if (props.picture === null)
         image = "../../images/no-profile-pic.png";
-    } else {
-        image = props.picture;
-    }
+     else
+        image =  props.picture;
 
     return (
         <div className="yelp-review">
@@ -17,7 +19,7 @@ const YelpList = (props) => {
                 </div>
                 <div className="yelper-info">
                     <h3>{props.username}</h3>
-                    <h4>{props.date}</h4>
+                    <h4>{ newDate }</h4>
                 </div>
                 <div className="yelper-rating">
                     <div className="rating" data-rating={props.rating}>
