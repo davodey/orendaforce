@@ -2,10 +2,10 @@ import React from "react";
 import dateFormat from 'dateformat';
 
 const YelpList = (props) => {
-    const now = props.time_created;
-    const newDate = dateFormat(now, "mmmm dS, yyyy");
     let image;
-
+    let reviewDate = props.date;
+    reviewDate = reviewDate.substring(0, reviewDate.indexOf(' '));
+    const newDate = dateFormat(reviewDate, "mmmm dS, yyyy");
     if (props.picture === null)
         image = "../../images/no-profile-pic.png";
      else

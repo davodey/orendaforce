@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const app = require('./app');
 const router = express.Router();
 const router2 = express.Router();
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT;
 const yelpReviewData = require('./yelpReviewData');
 const yelpBusinessData = require('./yelpBusinessData');
 
@@ -15,9 +15,8 @@ const yelpBusinessData = require('./yelpBusinessData');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
-app.listen(PORT, () => {
-    console.log(`App listening on port ${PORT}!`);
+app.listen(process.env.PORT || 5000, () => {
+    console.log(`App listening on port 5000!`);
 });
 
 yelpReviewData(function(data) {
