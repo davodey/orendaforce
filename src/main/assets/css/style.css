@@ -4897,6 +4897,7 @@ a:hover {
   line-height: 1.6em;
   text-indent: -0.5em;
   text-shadow: 1px 0 1px #b3b3b3;
+  margin:0 2px;
 }
 
 /** Colors */
@@ -5882,8 +5883,8 @@ footer .panel.content {
 @media (min-width: 768px) {
   /* line 28, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
   .yelp-block .display-reviews {
-    -ms-flex-align: center;
-        align-items: center;
+    -ms-flex-align: flex-start;
+        align-items: flex-start;
   }
 }
 @media (max-width: 768px) {

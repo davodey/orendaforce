@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "dateformat": "^2.0.0",
+    "react-engine": "^4.2.0",
     "react-scripts": "0.7.0"
   },
   "dependencies": {
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
     "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react-dom": "^15.4.1",
+    "whatwg-fetch": "^2.0.1",
+    "yelp-fusion": "^1.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
