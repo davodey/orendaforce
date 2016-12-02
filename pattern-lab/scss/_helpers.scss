@@ -1,6 +1,9 @@
 // Global Helpers
 // layout
 
+* {
+  box-sizing: border-box;
+}
 .container {
   padding:$unit;
 }

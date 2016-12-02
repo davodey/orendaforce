@@ -8,10 +8,18 @@
     width:120px;
     height:120px;
     margin-bottom:1em;
+    @media(max-width:768px) {
+      margin-bottom:0;
+    }
     
+    @media(max-width:640px) {
+      height:200px;
+      width:200px;
+      margin-bottom:1em;
+    }
     @media(max-width:400px) {
-      width:60px;
-      height:60px;
+      width:120px;
+      height:120px;
     }
   }
   
@@ -69,10 +77,16 @@
     
     h3 {
       margin:0;
+      @media(max-width:768px) {
+        font-size:2.3em;
+      }
     }
     h4 {
       margin:0;
-      color:$neutral-four
+      color:$neutral-four;
+      @media(max-width:768px) {
+      font-size:1.2em;
+      }
     }
 
   }

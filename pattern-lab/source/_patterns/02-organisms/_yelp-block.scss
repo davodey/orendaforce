@@ -30,7 +30,7 @@
 	justify-content: center;
 	
 	@media(min-width:768px) {
-	  align-items: center;
+	  align-items: baseline;
 	}
 	@media(max-width:768px) {
 	  flex-direction: column;

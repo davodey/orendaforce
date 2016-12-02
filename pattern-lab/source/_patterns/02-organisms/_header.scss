@@ -27,3 +27,13 @@ nav {
 
 }
   
+.header-btn {
+  @media(max-width:640px) {
+    width:100%;
+    a {
+      margin:0;
+      margin-bottom:1em;
+      width:100%;
+    }
+  }
+}

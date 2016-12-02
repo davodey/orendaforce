@@ -3508,52 +3508,6 @@
   clip: auto;
 }
 
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?uww5w3");
-  src: url("fonts/icomoon.eot?uww5w3#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?uww5w3") format("truetype"), url("../fonts/icomoon.woff?uww5w3") format("woff"), url("../fonts/icomoon.svg?uww5w3#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/* line 12, pattern-lab/scss/_icomoon.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 26, pattern-lab/scss/_icomoon.scss */
-.icon-logo-icon .path1:before {
-  content: "\e900";
-  color: white;
-}
-
-/* line 30, pattern-lab/scss/_icomoon.scss */
-.icon-logo-icon .path2:before {
-  content: "\e901";
-  margin-left: -0.994140625em;
-  color: white;
-}
-
-/* line 35, pattern-lab/scss/_icomoon.scss */
-.icon-sports-shoe:before {
-  content: "\e902";
-  font-size: 2em;
-  height: auto;
-}
-
-/* line 40, pattern-lab/scss/_icomoon.scss */
-.icon-weights:before {
-  content: "\e903";
-}
-
 /* line 2, pattern-lab/scss/_pattern-lab.scss */
 body {
   margin: 0;
@@ -4301,195 +4255,200 @@ template {
 }
 
 /* line 4, pattern-lab/scss/_helpers.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 7, pattern-lab/scss/_helpers.scss */
 .container, .flex-container {
   padding: 1em;
 }
 
-/* line 8, pattern-lab/scss/_helpers.scss */
+/* line 11, pattern-lab/scss/_helpers.scss */
 .flex-container {
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 13, pattern-lab/scss/_helpers.scss */
+/* line 16, pattern-lab/scss/_helpers.scss */
 .pos-relative {
   position: relative;
 }
 
-/* line 16, pattern-lab/scss/_helpers.scss */
+/* line 19, pattern-lab/scss/_helpers.scss */
 .hide {
   display: none;
 }
 
-/* line 20, pattern-lab/scss/_helpers.scss */
+/* line 23, pattern-lab/scss/_helpers.scss */
 .full-width {
   width: 100%;
 }
 
-/* line 26, pattern-lab/scss/_helpers.scss */
+/* line 29, pattern-lab/scss/_helpers.scss */
 .border {
   border: 1px solid #efefef;
 }
 
-/* line 30, pattern-lab/scss/_helpers.scss */
+/* line 33, pattern-lab/scss/_helpers.scss */
 .border-top {
   border-top: 1px solid #efefef;
 }
 
-/* line 34, pattern-lab/scss/_helpers.scss */
+/* line 37, pattern-lab/scss/_helpers.scss */
 .border-bottom {
   border-bottom: 1px solid #efefef;
 }
 
-/* line 38, pattern-lab/scss/_helpers.scss */
+/* line 41, pattern-lab/scss/_helpers.scss */
 .border-left {
   border-left: 1px solid #efefef;
 }
 
-/* line 42, pattern-lab/scss/_helpers.scss */
+/* line 45, pattern-lab/scss/_helpers.scss */
 .border-right {
   border-right: 1px solid #efefef;
 }
 
-/* line 47, pattern-lab/scss/_helpers.scss */
+/* line 50, pattern-lab/scss/_helpers.scss */
 .no-margin {
   margin: 0;
 }
 
-/* line 51, pattern-lab/scss/_helpers.scss */
+/* line 54, pattern-lab/scss/_helpers.scss */
 .margin-sides {
   padding: 0 1em;
 }
 
-/* line 55, pattern-lab/scss/_helpers.scss */
+/* line 58, pattern-lab/scss/_helpers.scss */
 .margin-top-bottom {
   padding: 1em 0;
 }
 
-/* line 59, pattern-lab/scss/_helpers.scss */
+/* line 62, pattern-lab/scss/_helpers.scss */
 .margin {
   margin: 15px;
 }
 
-/* line 63, pattern-lab/scss/_helpers.scss */
+/* line 66, pattern-lab/scss/_helpers.scss */
 .margin-top {
   margin-top: 1em;
 }
 
-/* line 67, pattern-lab/scss/_helpers.scss */
+/* line 70, pattern-lab/scss/_helpers.scss */
 .margin-bottom {
   margin-bottom: 1em;
 }
 
-/* line 71, pattern-lab/scss/_helpers.scss */
+/* line 74, pattern-lab/scss/_helpers.scss */
 .margin-left {
   margin-left: 1em;
 }
 
-/* line 75, pattern-lab/scss/_helpers.scss */
+/* line 78, pattern-lab/scss/_helpers.scss */
 .margin-left-thin {
   margin-left: .2em;
 }
 
-/* line 78, pattern-lab/scss/_helpers.scss */
+/* line 81, pattern-lab/scss/_helpers.scss */
 .margin-right {
   margin-right: 1em;
 }
 
-/* line 82, pattern-lab/scss/_helpers.scss */
+/* line 85, pattern-lab/scss/_helpers.scss */
 .margin-left-double {
   margin-left: 2em;
 }
 
 @media (max-width: 768px) {
-  /* line 86, pattern-lab/scss/_helpers.scss */
+  /* line 89, pattern-lab/scss/_helpers.scss */
   .no-margin-tablet {
     margin-left: 0;
   }
 }
 
-/* line 93, pattern-lab/scss/_helpers.scss */
+/* line 96, pattern-lab/scss/_helpers.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 97, pattern-lab/scss/_helpers.scss */
+/* line 100, pattern-lab/scss/_helpers.scss */
 .no-padding-top {
   padding-top: 0;
 }
 
-/* line 101, pattern-lab/scss/_helpers.scss */
+/* line 104, pattern-lab/scss/_helpers.scss */
 .padding-sides {
   padding: 0 1em;
 }
 
-/* line 105, pattern-lab/scss/_helpers.scss */
+/* line 108, pattern-lab/scss/_helpers.scss */
 .padding-top-bottom {
   padding: 1em 0;
 }
 
-/* line 109, pattern-lab/scss/_helpers.scss */
+/* line 112, pattern-lab/scss/_helpers.scss */
 .padding {
   padding: 15px;
 }
 
-/* line 113, pattern-lab/scss/_helpers.scss */
+/* line 116, pattern-lab/scss/_helpers.scss */
 .padding-top {
   padding-top: 1em;
 }
 
-/* line 117, pattern-lab/scss/_helpers.scss */
+/* line 120, pattern-lab/scss/_helpers.scss */
 .padding-top-double {
   padding-top: 2em;
 }
 
-/* line 120, pattern-lab/scss/_helpers.scss */
+/* line 123, pattern-lab/scss/_helpers.scss */
 .padding-bottom {
   padding-bottom: 1em;
 }
 
-/* line 124, pattern-lab/scss/_helpers.scss */
+/* line 127, pattern-lab/scss/_helpers.scss */
 .padding-left {
   padding-left: 1em;
 }
 
-/* line 128, pattern-lab/scss/_helpers.scss */
+/* line 131, pattern-lab/scss/_helpers.scss */
 .padding-right {
   padding-right: 1em;
 }
 
-/* line 133, pattern-lab/scss/_helpers.scss */
+/* line 136, pattern-lab/scss/_helpers.scss */
 .in-btn-left {
   margin-left: 5px;
   display: inline-block;
 }
 
-/* line 140, pattern-lab/scss/_helpers.scss */
+/* line 143, pattern-lab/scss/_helpers.scss */
 .white {
   color: #fff;
 }
 
-/* line 144, pattern-lab/scss/_helpers.scss */
+/* line 147, pattern-lab/scss/_helpers.scss */
 .black {
   color: #000;
 }
 
-/* line 149, pattern-lab/scss/_helpers.scss */
+/* line 152, pattern-lab/scss/_helpers.scss */
 .text-align-center {
   text-align: center;
 }
 
-/* line 153, pattern-lab/scss/_helpers.scss */
+/* line 156, pattern-lab/scss/_helpers.scss */
 .text-align-right {
   text-align: right;
 }
 
-/* line 157, pattern-lab/scss/_helpers.scss */
+/* line 160, pattern-lab/scss/_helpers.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 161, pattern-lab/scss/_helpers.scss */
+/* line 164, pattern-lab/scss/_helpers.scss */
 .flex-container {
   padding: 0;
   display: -ms-flexbox;
@@ -4497,7 +4456,7 @@ template {
   margin-bottom: 1em;
 }
 
-/* line 167, pattern-lab/scss/_helpers.scss */
+/* line 170, pattern-lab/scss/_helpers.scss */
 .column {
   -ms-flex-direction: column;
       flex-direction: column;
@@ -4938,90 +4897,91 @@ a:hover {
   line-height: 1.6em;
   text-indent: -0.5em;
   text-shadow: 1px 0 1px #b3b3b3;
+  margin: 0 .1em;
 }
 
 /** Colors */
-/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 49, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='1'] .star-1 {
   border-color: #cc8b1f;
   background: #cc8b1f;
 }
 
-/* line 54, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 55, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='1.5'] .star-2 {
   border-left-color: #cc8b1f;
 }
 
-/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 49, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='2'] .star-1 {
   border-color: #dcb228;
   background: #dcb228;
 }
 
-/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 49, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='2'] .star-2 {
   border-color: #dcb228;
   background: #dcb228;
 }
 
-/* line 54, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 55, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='2.5'] .star-3 {
   border-left-color: #dcb228;
 }
 
-/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 49, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='3'] .star-1 {
   border-color: #f0991e;
   background: #f0991e;
 }
 
-/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 49, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='3'] .star-2 {
   border-color: #f0991e;
   background: #f0991e;
 }
 
-/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 49, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='3'] .star-3 {
   border-color: #f0991e;
   background: #f0991e;
 }
 
-/* line 54, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 55, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='3.5'] .star-4 {
   border-left-color: #f0991e;
 }
 
-/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 49, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='4'] .star-1 {
   border-color: #f26a2c;
   background: #f26a2c;
 }
 
-/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 49, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='4'] .star-2 {
   border-color: #f26a2c;
   background: #f26a2c;
 }
 
-/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 49, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='4'] .star-3 {
   border-color: #f26a2c;
   background: #f26a2c;
 }
 
-/* line 48, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 49, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='4'] .star-4 {
   border-color: #f26a2c;
   background: #f26a2c;
 }
 
-/* line 54, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 55, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating^='4.5'] .star-5 {
   border-left-color: #f26a2c;
 }
 
-/* line 59, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+/* line 60, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
 [data-rating="5"] i {
   background: #dd050b;
   border-color: #dd050b;
@@ -5029,11 +4989,11 @@ a:hover {
 
 /** Print */
 @media print {
-  /* line 69, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+  /* line 70, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
   .rating {
     -webkit-print-color-adjust: exact;
   }
-  /* line 71, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
+  /* line 72, pattern-lab/source/_patterns/00-atoms/_yelp-stars.scss */
   .rating i {
     text-shadow: none;
   }
@@ -5375,7 +5335,7 @@ label {
 @media (max-width: 768px) {
   /* line 10, pattern-lab/source/_patterns/01-molecules/_input-group.scss */
   label {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 }
 /* line 22, pattern-lab/source/_patterns/01-molecules/_input-group.scss */
@@ -5386,6 +5346,18 @@ label.error {
   padding: .3em;
   margin-bottom: 0;
   margin-top: -2px;
+}
+@media (max-width: 768px) {
+  /* line 22, pattern-lab/source/_patterns/01-molecules/_input-group.scss */
+  label.error {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 640px) {
+  /* line 22, pattern-lab/source/_patterns/01-molecules/_input-group.scss */
+  label.error {
+    font-size: 1.2em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -5441,14 +5413,28 @@ label.error {
   height: 120px;
   margin-bottom: 1em;
 }
+@media (max-width: 768px) {
+  /* line 7, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  .yelp-review img {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 640px) {
+  /* line 7, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  .yelp-review img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 1em;
+  }
+}
 @media (max-width: 400px) {
   /* line 7, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
   .yelp-review img {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
   }
 }
-/* line 18, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+/* line 26, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
 .yelp-review .yelp-content {
   display: -ms-flexbox;
   display: flex;
@@ -5460,80 +5446,92 @@ label.error {
       justify-content: center;
 }
 @media (min-width: 1920px) {
-  /* line 18, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  /* line 26, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
   .yelp-review .yelp-content {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
 }
 @media (max-width: 768px) {
-  /* line 18, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  /* line 26, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
   .yelp-review .yelp-content {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
 }
 @media (max-width: 640px) {
-  /* line 18, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  /* line 26, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
   .yelp-review .yelp-content {
     -ms-flex-direction: column;
         flex-direction: column;
   }
 }
-/* line 34, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+/* line 42, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
 .yelp-review .yelp-content > div {
   padding-right: 1.5em;
 }
 @media (max-width: 768px) {
-  /* line 34, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  /* line 42, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
   .yelp-review .yelp-content > div {
     text-align: left;
   }
 }
 @media (max-width: 640px) {
-  /* line 34, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  /* line 42, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
   .yelp-review .yelp-content > div {
     text-align: center;
   }
 }
 @media (min-width: 1920px) {
-  /* line 46, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  /* line 54, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
   .yelp-review .yelp-content .yelper-info {
     text-align: left;
   }
 }
-/* line 51, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+/* line 59, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
 .yelp-review .yelp-content .yelper-rating {
   -ms-flex-item-align: baseline;
       align-self: baseline;
 }
 @media (max-width: 640px) {
-  /* line 51, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  /* line 59, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
   .yelp-review .yelp-content .yelper-rating {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
 }
-/* line 58, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+/* line 66, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
 .yelp-review .yelp-content .yelper-rating .rating {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
-/* line 62, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+/* line 70, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
 .yelp-review .yelp-content .yelper-rating .rating i {
   margin: 0 .1em;
 }
-/* line 70, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+/* line 78, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
 .yelp-review .yelp-content h3 {
   margin: 0;
 }
-/* line 73, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+@media (max-width: 768px) {
+  /* line 78, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  .yelp-review .yelp-content h3 {
+    font-size: 2.3em;
+  }
+}
+/* line 84, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
 .yelp-review .yelp-content h4 {
   margin: 0;
   color: #8b8b8d;
+}
+@media (max-width: 768px) {
+  /* line 84, pattern-lab/source/_patterns/01-molecules/_yelp-review.scss */
+  .yelp-review .yelp-content h4 {
+    font-size: 1.2em;
+  }
 }
 
 /* line 1, pattern-lab/source/_patterns/02-organisms/_header.scss */
@@ -5582,6 +5580,19 @@ nav {
   /* line 15, pattern-lab/source/_patterns/02-organisms/_header.scss */
   nav {
     bottom: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 30, pattern-lab/source/_patterns/02-organisms/_header.scss */
+  .header-btn {
+    width: 100%;
+  }
+  /* line 33, pattern-lab/source/_patterns/02-organisms/_header.scss */
+  .header-btn a {
+    margin: 0;
+    margin-bottom: 1em;
+    width: 100%;
   }
 }
 
@@ -5923,8 +5934,8 @@ footer .panel.content {
 @media (min-width: 768px) {
   /* line 28, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
   .yelp-block .display-reviews {
-    -ms-flex-align: center;
-        align-items: center;
+    -ms-flex-align: baseline;
+        align-items: baseline;
   }
 }
 @media (max-width: 768px) {
