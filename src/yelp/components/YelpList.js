@@ -1,12 +1,8 @@
 import React from "react";
 import Review from './Review';
-import dateFormat from 'dateformat';
-
 const YelpList = (props) => {
     const data = props.reviews;
     const review = data.map(function(value){
-        const now = value.time_created;
-        const newDate = dateFormat(now, "mmmm dS, yyyy");
         if (value.rating >= 3) {
             return (
                 <div className="col">
@@ -14,7 +10,7 @@ const YelpList = (props) => {
                         rating={value.rating}
                         text={value.text}
                         url={value.url}
-                        date={newDate}
+                        date={value.time_created}
                         username={value.user.name}
                         picture={value.user.image_url}
                     />
