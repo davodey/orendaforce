@@ -1,6 +1,5 @@
 import React from "react";
 import Review from './Review';
-import dateFormat from 'dateformat';
 
 const YelpList = (props) => {
     const data = props.reviews;
