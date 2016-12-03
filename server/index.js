@@ -19,17 +19,22 @@ app.listen(process.env.PORT || 5000, () => {
     console.log(`App listening on port 5000!`);
 });
 
-yelpReviewData(function(data) {
-    router.get('/', function (req, res) {
-        res.json(data);
+function getApiData () {
+    yelpReviewData(function(data) {
+        router.get('/', function (req, res) {
+            res.json(data);
+        });
     });
-});
 
-yelpBusinessData(function(data) {
-    router.get('/biz', function (req, res) {
-        res.json(data);
+    yelpBusinessData(function(data) {
+        router.get('/biz', function (req, res) {
+            res.json(data);
+        });
     });
-});
+}
+
+getApiData();
+setInterval(getApiData, 3600000);
 
 // all of our routes will be prefixed with /api
 app.use('/api', router);

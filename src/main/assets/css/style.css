@@ -5934,8 +5934,8 @@ footer .panel.content {
 @media (min-width: 768px) {
   /* line 28, pattern-lab/source/_patterns/02-organisms/_yelp-block.scss */
   .yelp-block .display-reviews {
-    -ms-flex-align: center;
-        align-items: center;
+    -ms-flex-align: baseline;
+        align-items: baseline;
   }
 }
 @media (max-width: 768px) {
