@@ -34,7 +34,7 @@ const YelpList = (props) => {
                 </div>
             </div>
             <div className="yelper-review">
-                <p className="review-text">{props.text} <a href={props.url} target="_blank">Continue on Yelp</a></p>
+                <p className="review-text">{props.text} <a href={props.url} target="_blank" onClick="ga('send', 'event', 'buttons', 'click', 'yelp site');">Continue on Yelp</a></p>
             </div>
         </div>
     )
