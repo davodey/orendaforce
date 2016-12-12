@@ -4,8 +4,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = require('./app');
 const router = express.Router();
-const router2 = express.Router();
-const PORT = process.env.PORT;
 const yelpReviewData = require('./yelpReviewData');
 const yelpBusinessData = require('./yelpBusinessData');
 
