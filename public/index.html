@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <meta name="description" content="Orenda Force is a wellness club that helps one achieve peak health, both of body and mind. We provide a service that assists and guides people in achieving their overall health goals.">
+    <meta name="google-site-verification" content="eN52XKKJI3dTsDXE-rOxyvYyfwVKSkxrp_4zABK0_NU" />
     <link rel="canonical" href="http://www.orendaforce.com/">
-
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -18,17 +18,18 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Orenda Force - Cave Creek Personal Training | Nutritionist | Mind Performance Therapy</title>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-71144403-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
   </head>
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-71144403-1', 'auto');
-      ga('send', 'pageview');
-
-  </script>
   <body>
     <div id="root"></div>
     <!--
@@ -293,10 +294,10 @@
         <span><a target="_blank" href="http://www.davidodey.com">UI / UX & Web Design by David ODey</a></span>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
     <script >
         $(document).ready(function(){
             $('input').iCheck({
@@ -310,12 +311,12 @@
                 $('.fa-refresh').hide();
                 $("form[name='contact-form']").validate({
                     // Specify validation rules
-                    rules: {
-                        firstName: {
-                            required: true
+                    "rules": {
+                        "firstName": {
+                            "required": true
                         },
-                        lastName: {
-                            required: true
+                        "lastName": {
+                            "required": true
                         },
                         email: {
                             required: true,
@@ -370,14 +371,14 @@
                             $('.fa-refresh').show();
                             $.ajax({
                                 type: 'POST',
-                                url: 'https://formspree.io/dodey@icloud.com',
+                                url: 'https://formspree.io/kolton@orendaforce.com',
                                 data: formData,
                                 dataType: 'json',
                                 success: function (response) {
                                     console.log(response);
                                     $('.fa-paper-plane').hide();
                                     $('.fa-refresh').show();
-                                    if (response.success === 'email sent') {
+                                    if (response.success === "confirmation email sent") {
                                         $('#message').fadeIn('fast');
                                         $('#submitForm').hide();
                                     }
@@ -388,9 +389,7 @@
                 });
 
             }
-
             createAccountValidation();
-
         });
 
     </script>

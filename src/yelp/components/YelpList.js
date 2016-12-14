@@ -1,12 +1,14 @@
 import React from "react";
 import Review from './Review';
-import dateFormat from 'dateformat';
 
 const YelpList = (props) => {
     const data = props.reviews;
     const review = data.map(function(value){
             return (
-                <div className="col">
+                <div
+                    className="col"
+                    key={value.time_created}
+                >
                     <Review
                         rating={value.rating}
                         text={value.text}

@@ -19,14 +19,14 @@ class YelpContainer extends Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost:5000/api")
+        fetch("http://orendaforce.com/api")
             .then( (response) => {
                 return response.json() })
             .then( (json) => {
                 this.setState({reviews: json});
             });
 
-        fetch("http://localhost:5000/api/biz")
+        fetch("http://orendaforce.com/api/biz")
             .then( (response) => {
                 return response.json() })
             .then( (json) => {

@@ -4,8 +4,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = require('./app');
 const router = express.Router();
-const router2 = express.Router();
-const PORT = process.env.PORT;
 const yelpReviewData = require('./yelpReviewData');
 const yelpBusinessData = require('./yelpBusinessData');
 
@@ -17,6 +15,13 @@ app.use(bodyParser.json());
 
 app.listen(process.env.PORT || 5000, () => {
     console.log(`App listening on port 5000!`);
+});
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Content-Type", "application/json");
+    next();
 });
 
 function getApiData () {
