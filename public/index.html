@@ -371,14 +371,14 @@
                             $('.fa-refresh').show();
                             $.ajax({
                                 type: 'POST',
-                                url: 'https://formspree.io/kolton@orendaforce.com',
+                                url: 'https://formspree.io/orendaforce@gmail.com',
                                 data: formData,
                                 dataType: 'json',
                                 success: function (response) {
                                     console.log(response);
                                     $('.fa-paper-plane').hide();
                                     $('.fa-refresh').show();
-                                    if (response.success === "confirmation email sent") {
+                                    if (response.success === "email sent") {
                                         $('#message').fadeIn('fast');
                                         $('#submitForm').hide();
                                     }
